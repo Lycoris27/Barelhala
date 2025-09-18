@@ -1,0 +1,36 @@
+{
+ "ProjectInfo": {
+  "Project": {
+   "Name": "Barelhala_WwiseProject",
+   "GUID": "{D17E614A-1557-4B51-801C-A53270D9CE3A}",
+   "Generator": "2024.1.8.8893"
+  },
+  "CacheRoot": "../.cache",
+  "Platforms": [
+   {
+    "Name": "Mac",
+    "GUID": "{5D445287-D298-4E74-A906-4976BE84F0C0}",
+    "BasePlatform": "Mac",
+    "BasePlatformGUID": "{9C6217D5-DD11-4795-87C1-6CE02853C540}",
+    "Path": "Mac"
+   },
+   {
+    "Name": "Windows",
+    "GUID": "{BCAC2463-066B-4842-9E1B-9596F9C6C0E4}",
+    "BasePlatform": "Windows",
+    "BasePlatformGUID": "{6E0CB257-C6C8-4C5C-8366-2740DFC441EB}",
+    "Path": "Windows"
+   }
+  ],
+  "Languages": [
+   {
+    "Name": "English(US)",
+    "Id": "684519430",
+    "GUID": "{5D9300AF-1F88-4C40-AA5B-23341FA19575}",
+    "Default": "true",
+    "UseAsStandIn": "true"
+   }
+  ],
+  "FileHash": "{987AB0BF-BCB2-6712-F6E4-F989006C3DA6}"
+ }
+}

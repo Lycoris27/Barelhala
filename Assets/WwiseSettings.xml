@@ -16,7 +16,7 @@
   <UseWaapi>true</UseWaapi>
   <WaapiPort>8080</WaapiPort>
   <WaapiIP>127.0.0.1</WaapiIP>
-  <InstallationWasRequested>false</InstallationWasRequested>
+  <InstallationWasRequested>true</InstallationWasRequested>
   <UseGitRepository>true</UseGitRepository>
   <PackageSource />
   <AddressableBankFolder>WwiseData/Bank</AddressableBankFolder>
