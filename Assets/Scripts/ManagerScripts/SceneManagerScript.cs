@@ -1,52 +1,15 @@
 using UnityEngine;
-using System.Collections.Generic;
+using UnityEngine.SceneManagement;
+
 
 public class SceneManagerScript : MonoBehaviour
 {
-    private HashSet<GameObject> interactibleList = new HashSet<GameObject>();
-    private int interactiblesCollected = 0;
-
-
-    private void OnEnable()
+    public void LoadNewScene(int sceneIndex)
     {
-        PlayerInputManagerScript.OnInteractPerformed += Interact;
-        ObjectInteractionScript.OnPlayerEnterZone += AddObject;
-        ObjectInteractionScript.OnPlayerExitZone += RemoveObject;
-        
-
+        SceneManager.LoadScene(sceneIndex);
     }
-    private void OnDisable()
+    public void QuitGame()
     {
-        PlayerInputManagerScript.OnInteractPerformed -= Interact;
-        ObjectInteractionScript.OnPlayerEnterZone -= AddObject;
-        ObjectInteractionScript.OnPlayerExitZone -= RemoveObject;
-        
-    }
-
-    private void Interact()
-    {
-        foreach(GameObject obj in interactibleList)
-        { 
-            interactiblesCollected += 1;
-            Destroy(obj);
-        }
-        interactibleList = new HashSet<GameObject>();
-        Debug.Log($"Interactibles Collected = {interactiblesCollected}");
-    }
-
-    private void AddObject(GameObject obj)
-    {
-        if (!interactibleList.Contains(obj))
-        {
-            print("Object Received");
-            interactibleList.Add(obj);
-        }
-    }
-    private void RemoveObject(GameObject obj)
-    {
-        if (interactibleList.Contains(obj))
-        {
-            interactibleList.Remove(obj);
-        }
+        Application.Quit();
     }
 }

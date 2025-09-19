@@ -5,10 +5,10 @@ using UnityEngine;
 public class EnemyAbilityActivator : MonoBehaviour
 {
     [SerializeField] private List<MonoBehaviour> effects = new();
-    private int currentIndex = 0;
+    //rivate int currentIndex = 0;
     [SerializeField] private bool canActivate = true;
-    [SerializeField] private float timer = 0f;
-    [SerializeField] private float timeForAbility = 5f;
+    //[SerializeField] private float timer = 0f;
+    //[SerializeField] private float timeForAbility = 5f;
     [SerializeField] private LayerMask playerLayer;
     [SerializeField] private LayerMask obstacleLayer;
 
