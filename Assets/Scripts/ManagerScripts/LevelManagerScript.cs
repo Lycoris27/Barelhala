@@ -1,52 +1,12 @@
 using UnityEngine;
-using System.Collections.Generic;
+using System;
 
 public class LevelManagerScript : MonoBehaviour
 {
-    private HashSet<GameObject> interactibleList = new HashSet<GameObject>();
-    private int interactiblesCollected = 0;
-
-
-    private void OnEnable()
+    public static event Action OnResetLevel;
+    private void ResetLevel()
     {
-        PlayerInputManagerScript.OnInteractPerformed += Interact;
-        ObjectInteractionScript.OnPlayerEnterZone += AddObject;
-        ObjectInteractionScript.OnPlayerExitZone += RemoveObject;
-        
-
-    }
-    private void OnDisable()
-    {
-        PlayerInputManagerScript.OnInteractPerformed -= Interact;
-        ObjectInteractionScript.OnPlayerEnterZone -= AddObject;
-        ObjectInteractionScript.OnPlayerExitZone -= RemoveObject;
-        
+        OnResetLevel?.Invoke();
     }
 
-    private void Interact()
-    {
-        foreach(GameObject obj in interactibleList)
-        { 
-            interactiblesCollected += 1;
-            Destroy(obj);
-        }
-        interactibleList = new HashSet<GameObject>();
-        Debug.Log($"Interactibles Collected = {interactiblesCollected}");
-    }
-
-    private void AddObject(GameObject obj)
-    {
-        if (!interactibleList.Contains(obj))
-        {
-            print("Object Received");
-            interactibleList.Add(obj);
-        }
-    }
-    private void RemoveObject(GameObject obj)
-    {
-        if (interactibleList.Contains(obj))
-        {
-            interactibleList.Remove(obj);
-        }
-    }
 }
