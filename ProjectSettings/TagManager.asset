@@ -8,6 +8,7 @@ TagManager:
   - Enemy
   - Wall
   - HUD
+  - Bullet
   layers:
   - Default
   - TransparentFX
