@@ -5,12 +5,9 @@ using UnityEngine.AI;
 
 public class EnemyAIScript : MonoBehaviour
 {
-    
     NavMeshAgent agent;
-    Vector3 lastTargetPosition;
     [SerializeField] Transform target;
-    [SerializeField] float repositionThreshold = 1f;
-    [SerializeField] bool canMove = true;
+    [SerializeField] private bool isTargettingPlayer = false;
 
     // Start is called before the first frame update
     void Start()
@@ -19,25 +16,41 @@ public class EnemyAIScript : MonoBehaviour
         agent = GetComponent<NavMeshAgent>();
         agent.updateRotation = false;
         agent.updateUpAxis = false;
-        agent.SetDestination(target.position);
+        //agent.SetDestination(target.position);
     }
-    void Update()
+    private void Update()
     {
-        if (canMove) { UpdateMovement();}
+        //UpdatePlayerTargetting();
     }
 
-    private void UpdateMovement()
+    public void SettingDestination(GameObject targetPos, bool targettingPlayer, float speed, float lifetime)
     {
-        if ((target.position - lastTargetPosition).sqrMagnitude > repositionThreshold * repositionThreshold)
+        agent.speed = speed;
+        isTargettingPlayer = targettingPlayer;
+        // if not targetting the player, just set the position, go to it, and end it after the delay.
+        if (!targettingPlayer)
+        {
+            agent.SetDestination(targetPos.transform.position);
+            StartMovement();
+            if(lifetime != 0) GlobalEvents.StartDelay(lifetime, StopMovement);
+        }
+        else
         {
             agent.SetDestination(target.position);
-            lastTargetPosition = target.position;
+            StartMovement();
+            if (lifetime != 0) GlobalEvents.StartDelay(lifetime, StopMovement);
         }
     }
-
-    public void ChangeCanMove()
+    public void UpdatePlayerTargetting()
     {
-        if (canMove) { canMove = false;}
-        if (!canMove) { canMove = true;}
+        if(isTargettingPlayer) agent.SetDestination(target.position);
+    }
+    public void StopMovement()
+    {
+        agent.isStopped = true;
+    }
+    public void StartMovement()
+    {
+        agent.isStopped = false;
     }
 }

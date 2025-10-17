@@ -1,0 +1,61 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Mac",
+  "BasePlatform": "Mac",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "154",
+  "SoundBanks": [
+   {
+    "Id": "3161908922",
+    "Type": "User",
+    "GUID": "{E3D7C2A7-8136-4779-AA12-703B5CC44C86}",
+    "Language": "English(US)",
+    "Hash": "{0D0FC550-ED03-AD6E-4350-B7FF76F029F3}",
+    "ObjectPath": "\\SoundBanks\\Default Work Unit\\Main",
+    "ShortName": "Main",
+    "Path": "English(US)/Main.bnk",
+    "Media": [
+     {
+      "Id": "975214564",
+      "Language": "English(US)",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "jam_project_-_believe_in_my_existence.wav",
+      "CachePath": "3C/{3C40DC12-14CC-B73F-FDBB-A6F2B9AAB0C4}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "251043389",
+      "Name": "Play_Song",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_Song",
+      "GUID": "{3581FAEF-5B5F-4ED5-A838-AB154F40A8F9}",
+      "DurationType": "OneShot",
+      "DurationMin": "247.31573",
+      "DurationMax": "247.31573",
+      "MediaRefs": [
+       {
+        "Id": "975214564"
+       }
+      ]
+     },
+     {
+      "Id": "2820223978",
+      "Name": "Play_This",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_This",
+      "GUID": "{F2111D6E-A013-4B92-93FB-9024AAE19CB8}",
+      "DurationType": "OneShot",
+      "DurationMin": "247.31573",
+      "DurationMax": "247.31573",
+      "MediaRefs": [
+       {
+        "Id": "975214564"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{F15C1C0F-E60D-7933-847E-E844BE597BD8}"
+ }
+}

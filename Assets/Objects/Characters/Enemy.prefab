@@ -80,9 +80,6 @@ GameObject:
   - component: {fileID: 4457161702047693809}
   - component: {fileID: 6980554421233638552}
   - component: {fileID: 1292711672928324374}
-  - component: {fileID: 4786970237169415640}
-  - component: {fileID: 7831385209775419811}
-  - component: {fileID: 2364611334841229260}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Enemy
@@ -231,60 +228,3 @@ NavMeshAgent:
   m_BaseOffset: 1
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 0
---- !u!114 &4786970237169415640
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8905302498793838846}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6512ad0bfe57eb0408b8c5861eb271b8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  target: {fileID: 0}
-  repositionThreshold: 1
-  canMove: 1
---- !u!114 &7831385209775419811
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8905302498793838846}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 25f5a6048b8a8164e84fbb7107f04c81, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  effects:
-  - {fileID: 2364611334841229260}
-  canActivate: 1
-  playerLayer:
-    serializedVersion: 2
-    m_Bits: 64
-  obstacleLayer:
-    serializedVersion: 2
-    m_Bits: 128
---- !u!114 &2364611334841229260
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8905302498793838846}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cdc1dc8a21d505644a552aaa3b3c36bd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rotationSpeed: 90
-  movementDirection: {x: 0, y: 1}
-  movementSpeed: 10
-  spawnRate: 2
-  projectilesPerBlast: 8
-  projectilePrefab: {fileID: 8570068880541469392, guid: f199282be24931b40a1b87184fcbe48d, type: 3}
-  projectileSpeed: 10
-  lifetime: 5
-  abilityDelay: 3

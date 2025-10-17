@@ -1,6 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
-<WwiseDocument Type="WorkUnit" ID="{9E052045-E5ED-4271-83CB-4CBB9AF3F54A}" SchemaVersion="123">
+<WwiseDocument Type="WorkUnit" ID="{55E2051E-819B-496F-B51C-CA68A2D516D4}" SchemaVersion="123">
 	<Events>
-		<WorkUnit Name="Default Work Unit" ID="{9E052045-E5ED-4271-83CB-4CBB9AF3F54A}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{55E2051E-819B-496F-B51C-CA68A2D516D4}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="Play_Song" ID="{3581FAEF-5B5F-4ED5-A838-AB154F40A8F9}">
+					<ChildrenList>
+						<Action Name="" ID="{82AD217A-4F1D-4568-A201-E6FEB775984E}" ShortID="462511625">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="jam_project_-_believe_in_my_existence" ID="{6F841EC6-6E8B-4286-8385-F38020B3F835}" WorkUnitID="{D7AAD56C-1B10-45D0-B221-3519EA9A271F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_This" ID="{F2111D6E-A013-4B92-93FB-9024AAE19CB8}">
+					<ChildrenList>
+						<Action Name="" ID="{F890D49A-9039-4D8B-82A9-7F4636246D0D}" ShortID="622174677">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="jam_project_-_believe_in_my_existence" ID="{6F841EC6-6E8B-4286-8385-F38020B3F835}" WorkUnitID="{D7AAD56C-1B10-45D0-B221-3519EA9A271F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
 	</Events>
 </WwiseDocument>

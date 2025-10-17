@@ -1,6 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
-<WwiseDocument Type="WorkUnit" ID="{E879EE3C-2D56-42C8-A51A-A6DA9388E23F}" SchemaVersion="123">
+<WwiseDocument Type="WorkUnit" ID="{D7AAD56C-1B10-45D0-B221-3519EA9A271F}" SchemaVersion="123">
 	<AudioObjects>
-		<WorkUnit Name="Default Work Unit" ID="{E879EE3C-2D56-42C8-A51A-A6DA9388E23F}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{D7AAD56C-1B10-45D0-B221-3519EA9A271F}" PersistMode="Standalone">
+			<ChildrenList>
+				<Sound Name="jam_project_-_believe_in_my_existence" ID="{6F841EC6-6E8B-4286-8385-F38020B3F835}" ShortID="398069568">
+					<PropertyList>
+						<Property Name="IsVoice" Type="bool" Value="True"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9A481D04-B925-4E4F-8438-2A25588A4652}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A491F9D4-BAA9-4DD2-B809-C6C46A53612D}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="jam_project_-_believe_in_my_existence" ID="{DC99629A-0222-46B7-AEA7-B4CEDE341C52}">
+							<Language>English(US)</Language>
+							<AudioFile>jam_project_-_believe_in_my_existence.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="975214564"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="jam_project_-_believe_in_my_existence" ID="{DC99629A-0222-46B7-AEA7-B4CEDE341C52}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+			</ChildrenList>
+		</WorkUnit>
 	</AudioObjects>
 </WwiseDocument>

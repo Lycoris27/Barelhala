@@ -1,64 +1,63 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<WwiseDocument Type="Project" SchemaVersion="123" WwiseVersion="v2024.1.8" WwiseBuild="8893">
+<WwiseDocument Type="Project" SchemaVersion="123" WwiseVersion="v2024.1.8" WwiseBuild="8898">
 	<ProjectInfo>
-		<Project Name="Barelhala_WwiseProject" ID="{D17E614A-1557-4B51-801C-A53270D9CE3A}">
+		<Project Name="Barelhala_WwiseProject" ID="{5081B4E9-3591-4864-BDE0-82E31CC60792}">
 			<Platforms>
-				<Platform Name="Mac" ReferencePlatform="Mac" ID="{5D445287-D298-4E74-A906-4976BE84F0C0}" />
-				<Platform Name="Windows" ReferencePlatform="Windows" ID="{BCAC2463-066B-4842-9E1B-9596F9C6C0E4}" />
+				<Platform Name="Mac" ReferencePlatform="Mac" ID="{987B75BC-E9B1-414A-8E2B-31EE3827EF12}" />
+				<Platform Name="Windows" ReferencePlatform="Windows" ID="{335FFE02-88CD-476A-9961-4D8A40CA51B9}" />
 			</Platforms>
 			<LanguageList>
-				<Language Name="English(US)" ID="{5D9300AF-1F88-4C40-AA5B-23341FA19575}" />
-				<Language Name="External" ID="{0F53C47A-1635-4853-B575-3F496584098A}" />
-				<Language Name="Mixed" ID="{8648A8BA-B73A-455C-873B-7B3D22D681D2}" />
-				<Language Name="SFX" ID="{53D1644D-CF3D-49C2-B9CE-E059A3F2C3CE}" />
+				<Language Name="English(US)" ID="{1D64916C-8220-4A4F-9D0C-49CCC8C12143}" />
+				<Language Name="External" ID="{1533A66B-C891-4314-959D-F8FC2F36ACBC}" />
+				<Language Name="Mixed" ID="{A5F2A629-F078-4964-86AB-526DA3696F71}" />
+				<Language Name="SFX" ID="{66196A13-34C2-498C-B6D9-FF4A1A594666}" />
 			</LanguageList>
 			<PropertyList>
 				<Property Name="ExternalSourcesInputPath" Type="string">
 					<ValueList>
-						<Value Platform="Windows"></Value>
 						<Value Platform="Mac"></Value>
+						<Value Platform="Windows"></Value>
 					</ValueList>
 				</Property>
 				<Property Name="ExternalSourcesOutputPath" Type="string">
 					<ValueList>
-						<Value Platform="Windows">GeneratedSoundBanks\Windows</Value>
 						<Value Platform="Mac">GeneratedSoundBanks\Mac</Value>
+						<Value Platform="Windows">GeneratedSoundBanks\Windows</Value>
 					</ValueList>
 				</Property>
-				<Property Name="GenerateMainSoundBank" Type="bool" Value="True" />
 				<Property Name="SoundBankGenerateHeaderFile" Type="bool" Value="True" />
 				<Property Name="SoundBankGenerateEstimatedDuration" Type="bool" Value="True" /><Property Name="SoundBankHeaderFilePath" Type="string" Value="..\Assets\StreamingAssets\Audio\GeneratedSoundBanks" />
 				<Property Name="SoundBankPaths" Type="string">
 					<ValueList>
-						<Value Platform="Windows">GeneratedSoundBanks\Windows\</Value>
 						<Value Platform="Mac">GeneratedSoundBanks\Mac\</Value>
+						<Value Platform="Windows">GeneratedSoundBanks\Windows\</Value>
 					</ValueList>
 				</Property>
 				<Property Name="SoundBankPostGenerateCustomCmdDescription" Type="string">
 					<ValueList>
-						<Value Platform="Windows"></Value>
 						<Value Platform="Mac"></Value>
+						<Value Platform="Windows"></Value>
 					</ValueList>
 				</Property>
 				<Property Name="SoundBankPostGenerateCustomCmdLines" Type="string">
 					<ValueList>
-						<Value Platform="Windows"></Value>
 						<Value Platform="Mac"></Value>
+						<Value Platform="Windows"></Value>
 					</ValueList>
 				</Property>
 				<Property Name="SoundBankPreGenerateCustomCmdDescription" Type="string">
 					<ValueList>
-						<Value Platform="Windows"></Value>
 						<Value Platform="Mac"></Value>
+						<Value Platform="Windows"></Value>
 					</ValueList>
 				</Property>
 				<Property Name="SoundBankPreGenerateCustomCmdLines" Type="string">
 					<ValueList>
-						<Value Platform="Windows"></Value>
 						<Value Platform="Mac"></Value>
+						<Value Platform="Windows"></Value>
 					</ValueList>
 				</Property>
-				<Property Name="WwiseVersionWhenCreated" Type="string" Value="Branch=wwise_v2024.1.8|Build=8893|VersionName=v2024.1.8|Config=Release" />
+				<Property Name="WwiseVersionWhenCreated" Type="string" Value="Branch=wwise_v2024.1.8|Build=8898|VersionName=v2024.1.8|Config=Release" />
 			</PropertyList>
 			<MiscSettings>
 				<MiscSettingEntry Name="Cache"><![CDATA[.cache]]></MiscSettingEntry>
@@ -11396,7 +11395,7 @@
 					<Comment></Comment>
 					<ObsOccCurve CurveXType="Obstruction" CurveYType="Volume">
 						<PlatformCurve Platform="Linked" EnableCurve="true">
-							<Curve Name="" ID="{182F1BE8-0D83-4F71-8C69-F7C473CF3C0A}">
+							<Curve Name="" ID="{13043368-778D-4A16-AD8B-464D0405AEE9}">
 								<PropertyList>
 									<Property Name="Flags" Type="int32" Value="3" />
 								</PropertyList>
@@ -11417,7 +11416,7 @@
 					</ObsOccCurve>
 					<ObsOccCurve CurveXType="Obstruction" CurveYType="LPF">
 						<PlatformCurve Platform="Linked" EnableCurve="true">
-							<Curve Name="" ID="{E95184F3-494D-4C23-9281-1BEEA95E9420}">
+							<Curve Name="" ID="{BDDF9F26-6B4B-4024-8050-5F2110F8AD6A}">
 								<PropertyList>
 									<Property Name="Flags" Type="int32" Value="1" />
 								</PropertyList>
@@ -11438,7 +11437,7 @@
 					</ObsOccCurve>
 					<ObsOccCurve CurveXType="Obstruction" CurveYType="HPF">
 						<PlatformCurve Platform="Linked" EnableCurve="false">
-							<Curve Name="" ID="{7A7F89A6-8D69-40E9-B87B-6500C43601BB}">
+							<Curve Name="" ID="{A09BEA1C-9699-4845-8021-2E0FAE6C5253}">
 								<PropertyList>
 									<Property Name="Flags" Type="int32" Value="1" />
 								</PropertyList>
@@ -11459,7 +11458,7 @@
 					</ObsOccCurve>
 					<ObsOccCurve CurveXType="Occlusion" CurveYType="Volume">
 						<PlatformCurve Platform="Linked" EnableCurve="true">
-							<Curve Name="" ID="{064AED9B-A78B-4549-BB7D-344F26E618A9}">
+							<Curve Name="" ID="{CE05E0AF-193A-4C70-A9B1-11808EBE2A78}">
 								<PropertyList>
 									<Property Name="Flags" Type="int32" Value="3" />
 								</PropertyList>
@@ -11480,7 +11479,7 @@
 					</ObsOccCurve>
 					<ObsOccCurve CurveXType="Occlusion" CurveYType="LPF">
 						<PlatformCurve Platform="Linked" EnableCurve="true">
-							<Curve Name="" ID="{5B977A86-3C4D-4AF0-9BE6-709CB8D9BDAF}">
+							<Curve Name="" ID="{A4F1EAEC-7234-4C2D-B573-A8DE78AB4DB7}">
 								<PropertyList>
 									<Property Name="Flags" Type="int32" Value="1" />
 								</PropertyList>
@@ -11501,7 +11500,7 @@
 					</ObsOccCurve>
 					<ObsOccCurve CurveXType="Occlusion" CurveYType="HPF">
 						<PlatformCurve Platform="Linked" EnableCurve="false">
-							<Curve Name="" ID="{0C6462EE-CA8B-4217-BA09-1AD1313DF2FD}">
+							<Curve Name="" ID="{4863DC48-AC98-4867-9D69-7D34419C2A87}">
 								<PropertyList>
 									<Property Name="Flags" Type="int32" Value="1" />
 								</PropertyList>
@@ -11522,7 +11521,7 @@
 					</ObsOccCurve>
 					<ObsOccCurve CurveXType="Diffraction" CurveYType="Volume">
 						<PlatformCurve Platform="Linked" EnableCurve="true">
-							<Curve Name="" ID="{9D2E450B-BBC6-4D2D-897A-D416CE444657}">
+							<Curve Name="" ID="{28532101-3AF8-4CD8-A24E-CA4B2C82EA5C}">
 								<PropertyList>
 									<Property Name="Flags" Type="int32" Value="3" />
 								</PropertyList>
@@ -11543,7 +11542,7 @@
 					</ObsOccCurve>
 					<ObsOccCurve CurveXType="Diffraction" CurveYType="LPF">
 						<PlatformCurve Platform="Linked" EnableCurve="true">
-							<Curve Name="" ID="{694496B9-DC19-4EEC-81CA-BBBCC98BDAD5}">
+							<Curve Name="" ID="{80034B26-841A-4CF6-82FA-05971351A7C4}">
 								<PropertyList>
 									<Property Name="Flags" Type="int32" Value="1" />
 								</PropertyList>
@@ -11564,7 +11563,7 @@
 					</ObsOccCurve>
 					<ObsOccCurve CurveXType="Diffraction" CurveYType="HPF">
 						<PlatformCurve Platform="Linked" EnableCurve="false">
-							<Curve Name="" ID="{F0D80144-17E4-442F-AB16-D7949707B390}">
+							<Curve Name="" ID="{FCC24EA8-93CB-4AE4-9E33-8E3A9B265B6F}">
 								<PropertyList>
 									<Property Name="Flags" Type="int32" Value="1" />
 								</PropertyList>
@@ -11585,7 +11584,7 @@
 					</ObsOccCurve>
 					<ObsOccCurve CurveXType="Transmission" CurveYType="Volume">
 						<PlatformCurve Platform="Linked" EnableCurve="true">
-							<Curve Name="" ID="{4B782928-AD98-4C0C-9337-7410B8575EB0}">
+							<Curve Name="" ID="{6D4DDE8F-BEF7-4F15-B9A5-E077773F725B}">
 								<PropertyList>
 									<Property Name="Flags" Type="int32" Value="3" />
 								</PropertyList>
@@ -11606,7 +11605,7 @@
 					</ObsOccCurve>
 					<ObsOccCurve CurveXType="Transmission" CurveYType="LPF">
 						<PlatformCurve Platform="Linked" EnableCurve="true">
-							<Curve Name="" ID="{4D3C8BFD-5607-4C2A-8776-5FD6C283EF45}">
+							<Curve Name="" ID="{D4A17443-9051-4F5F-8D99-AB812113011E}">
 								<PropertyList>
 									<Property Name="Flags" Type="int32" Value="1" />
 								</PropertyList>
@@ -11627,7 +11626,7 @@
 					</ObsOccCurve>
 					<ObsOccCurve CurveXType="Transmission" CurveYType="HPF">
 						<PlatformCurve Platform="Linked" EnableCurve="false">
-							<Curve Name="" ID="{25429DDA-5F4E-4210-930A-2A3746ECE660}">
+							<Curve Name="" ID="{0CC27BBF-3014-4B8D-8E15-4D53401F725C}">
 								<PropertyList>
 									<Property Name="Flags" Type="int32" Value="1" />
 								</PropertyList>
