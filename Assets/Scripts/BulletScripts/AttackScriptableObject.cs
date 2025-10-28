@@ -13,24 +13,35 @@ public class AttackScriptableObject : AbilityBaseScript
     public override GameObject Prefab => prefab;
 
     [Header("Initial Variables")]
-    [Tooltip("This is a delay before the start of the ability, can be useful if attaching multiple scripts in succession")]
-    [SerializeField] private float initialDelay;
-    public override float InitialDelay => initialDelay;
 
-    [SerializeField] private Vector3 objectSize;
+    [SerializeField] private Vector3 objectSize = new Vector3(1f,1f,1f);
     public override Vector3 Size => objectSize;
 
-    [Header("Direction Variables")]
+    [Tooltip("if shooting multiple bullets, will determine the range over which bullets can be shot " +
+"\n 0 = no deviation, will overlap all bullets " +
+"\n 360 = full circle, will shoot in all directions around enemy")]
+    [SerializeField] private float coneAngle = 360f;
+    public override float ConeAngle => coneAngle;
+
     [Tooltip("determines if the direction is targetted at the player. " +
-        "\n If = true | Ignore everything other than coneAngle")]
+    "\n If = true | Ignore everything other than coneAngle")]
     [SerializeField] private bool isTargettingPlayer; // might be desired later
     public override bool IsTargettingPlayer => isTargettingPlayer;
 
-    [Tooltip("if shooting multiple bullets, will determine the range over which bullets can be shot " +
-    "\n 0 = no deviation, will overlap all bullets " +
-    "\n 360 = full circle, will shoot in all directions around enemy")]
-    [SerializeField] private float coneAngle = 360f;
-    public override float ConeAngle => coneAngle;
+
+
+    [Header("Spawning Variables")]
+
+    [SerializeField] private float spawnRate;
+    public override float SpawnRate => spawnRate;
+
+    [SerializeField] private float bulletCount;
+    public override float SpawnCount => bulletCount;
+
+    [SerializeField] private float spawnRadius = 0f; // new field
+    public override float SpawnRadius => spawnRadius;
+
+    [Header("Direction Variables - Only input if IsTargettingPlayer = False")]
 
     [Tooltip("When not targetting the player, determines the direction that the bullets are pointing at")]
     [SerializeField] private float direction;
@@ -47,17 +58,6 @@ public class AttackScriptableObject : AbilityBaseScript
     [Tooltip("Determines whether or not the swap counter resets and allows the direction to change multiple times")]
     [SerializeField] private bool repeatingCounter;
     public override bool RepeatingCounter => repeatingCounter;
-
-    [Header("Spawning Variables")]
-
-    [SerializeField] private float spawnRate;
-    public override float SpawnRate => spawnRate;
-
-    [SerializeField] private float bulletCount;
-    public override float SpawnCount => bulletCount;
-
-    [SerializeField] private float spawnRadius = 0f; // new field
-    public override float SpawnRadius => spawnRadius;
 
     [Header("Linear Velocity Variables")]
 
@@ -105,12 +105,11 @@ public class AttackScriptableObject : AbilityBaseScript
         Debug.Log($"self reference = {selfRef}, Self Ref = {SelfRef}");
 
         // Delay before spawning bullets
-        GlobalEvents.StartDelay(InitialDelay, () =>
-        {
-            GenerateBullets();
-            // Schedule lifetime cleanup
-            GlobalEvents.StartDelay(Lifetime, EndAbility);
-        });
+
+        GenerateBullets();
+        // Schedule lifetime cleanup
+        GlobalEvents.StartDelay(Lifetime, EndAbility);
+
     }
     private void EndAbility()
     {
@@ -172,11 +171,8 @@ public class AttackScriptableObject : AbilityBaseScript
                 Quaternion bulletRotation = Quaternion.LookRotation(bulletDirection, Vector3.up);
 
                 GameObject bullet = Instantiate(Prefab, spawnPos, bulletRotation);
-                bullet.transform.localScale = new Vector3(
-                    bullet.transform.localScale.x * Size.x,
-                    bullet.transform.localScale.y * Size.y,
-                    bullet.transform.localScale.z * Size.z
-                );
+
+                bullet.transform.localScale = new Vector3(Size.x, Size.y, Size.z);
 
                 spawnedObjects.Add(bullet);
                 delayedObjects.Add(bullet);

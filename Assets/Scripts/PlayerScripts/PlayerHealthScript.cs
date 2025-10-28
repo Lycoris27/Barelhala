@@ -8,6 +8,7 @@ public class PlayerHealthScript : MonoBehaviour
 {
     [SerializeField] private int maxPlayerHealth = 5;
     [SerializeField] private int currentHealth = 0;
+    [SerializeField] private float delayBeforeCanDamage = 2f;
     [SerializeField] private bool canTakeDamage = true;
 
     private void Awake()
@@ -76,7 +77,7 @@ public class PlayerHealthScript : MonoBehaviour
     {
         Debug.Log("Can't take damage");
         canTakeDamage = false;
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(delayBeforeCanDamage);
         canTakeDamage = true;
         Debug.Log("Can take damage");
     }
