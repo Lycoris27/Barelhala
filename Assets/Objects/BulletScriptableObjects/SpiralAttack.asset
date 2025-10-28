@@ -12,18 +12,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aaa044fab9d610e42baf618c93960c66, type: 3}
   m_Name: SpiralAttack
   m_EditorClassIdentifier: 
-  prefab: {fileID: 8570068880541469392, guid: f199282be24931b40a1b87184fcbe48d, type: 3}
-  initialDelay: 1
+  prefab: {fileID: 8570068880541469392, guid: ca42902c47f32ab47a56304084c18d95, type: 3}
   objectSize: {x: 1, y: 1, z: 1}
-  isTargettingPlayer: 0
   coneAngle: 360
+  isTargettingPlayer: 0
+  spawnRate: 3
+  bulletCount: 5
+  spawnRadius: 0
   direction: 0
   directionChange: 10
   directionSwapCounter: 0
   repeatingCounter: 0
-  spawnRate: 3
-  bulletCount: 5
-  spawnRadius: 0
   linearSpeed: 5
   linearSpeedDelay: 0.2
   angularSpeed: 0
