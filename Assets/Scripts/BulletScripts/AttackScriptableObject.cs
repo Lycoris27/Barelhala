@@ -14,6 +14,9 @@ public class AttackScriptableObject : AbilityBaseScript
 
     [Header("Initial Variables")]
 
+    [SerializeField] private float initialDelay = 0f;
+    public override float InitialDelay => initialDelay;
+
     [SerializeField] private Vector3 objectSize = new Vector3(1f,1f,1f);
     public override Vector3 Size => objectSize;
 
@@ -85,8 +88,10 @@ public class AttackScriptableObject : AbilityBaseScript
     [SerializeField] private float abilityDecay;
     public override float Decay => abilityDecay;
 
+    [SerializeField] private bool earlyDecay = false;
+
     // Unique Ability Variables
-    [SerializeField] private bool active = false;
+    private bool active = false;
 
     private List<GameObject> spawnedObjects = new List<GameObject>();
     private List<GameObject> delayedObjects = new List<GameObject>();
@@ -108,7 +113,12 @@ public class AttackScriptableObject : AbilityBaseScript
 
         GenerateBullets();
         // Schedule lifetime cleanup
+
+
         GlobalEvents.StartDelay(Lifetime, EndAbility);
+            if (earlyDecay)
+                CleanupBullets();
+
 
     }
     private void EndAbility()
@@ -170,12 +180,15 @@ public class AttackScriptableObject : AbilityBaseScript
                 Vector3 spawnPos = selfRef.transform.position + bulletDirection * SpawnRadius;
                 Quaternion bulletRotation = Quaternion.LookRotation(bulletDirection, Vector3.up);
 
-                GameObject bullet = Instantiate(Prefab, spawnPos, bulletRotation);
+                GlobalEvents.StartDelay(InitialDelay, () =>
+                {
+                    GameObject bullet = Instantiate(Prefab, spawnPos, bulletRotation);
 
-                bullet.transform.localScale = new Vector3(Size.x, Size.y, Size.z);
+                    bullet.transform.localScale = new Vector3(Size.x, Size.y, Size.z);
 
-                spawnedObjects.Add(bullet);
-                delayedObjects.Add(bullet);
+                    spawnedObjects.Add(bullet);
+                    delayedObjects.Add(bullet);
+                });
             }
             ActivateLinearMomentum();
             ActivateAngularMomentum();

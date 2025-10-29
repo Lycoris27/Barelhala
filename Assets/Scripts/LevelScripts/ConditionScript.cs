@@ -13,4 +13,9 @@ public class ConditionScript : MonoBehaviour
         GlobalEvents.OnPause();
         UIManagerScript.EngageUI(4);
     }
+    public static void PlaytestEnd()
+    {
+        GlobalEvents.OnPause();
+        UIManagerScript.EngageUI(5);
+    }
 }

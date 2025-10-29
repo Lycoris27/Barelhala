@@ -19,8 +19,9 @@ public class UIManagerScript : MonoBehaviour
         {
             // First instance, keep it alive
             instance = this;
+            HeldUIElements = heldUIElements;
         }
-        HeldUIElements = heldUIElements;
+        
     }
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -38,7 +39,7 @@ public class UIManagerScript : MonoBehaviour
         foreach (GameObject obj in HeldUIElements)
         {
             if(HeldUIElements[UINumber] == obj) { obj.SetActive(true); }
-            else { obj.SetActive(false); }
+            else {obj.SetActive(false);}
         }
     }
     public void SetFirstSelected(GameObject obj)

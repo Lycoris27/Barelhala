@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using TMPro;
+
 
 public class PlayerHealthScript : MonoBehaviour
 {
@@ -36,6 +38,7 @@ public class PlayerHealthScript : MonoBehaviour
         if (canTakeDamage)
         {
             currentHealth += 1;
+            PlaytestDamage();
             if (currentHealth <= maxPlayerHealth)
             {
                 UpdateHealthUI();
@@ -43,9 +46,31 @@ public class PlayerHealthScript : MonoBehaviour
             }
             else if (currentHealth > maxPlayerHealth)
             {
+                PlaytestDeaths();
                 ConditionScript.LossConditionMet();
             }
         }
+    }
+    public TextMeshProUGUI damageText;
+    public TextMeshProUGUI deathText;
+    public int damageInt;
+    public int deathInt;
+    private void PlaytestDamage()
+    {
+        damageInt += 1;
+        damageText.text = $"Damage taken: {damageInt}";
+    }
+    private void PlaytestDeaths()
+    {
+        deathInt += 1;
+        deathText.text = $"Deaths: {deathText}";
+    }
+    public void ResetPlaytest()
+    {
+        damageInt = 0;
+        deathInt = 0;
+        damageText.text = $"Damage taken: {damageInt}";
+        deathText.text = $"Deaths: {deathText}";
     }
 
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)

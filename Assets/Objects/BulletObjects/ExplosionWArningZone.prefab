@@ -13,7 +13,6 @@ GameObject:
   - component: {fileID: 8501160302342862570}
   - component: {fileID: 2522527620374500698}
   - component: {fileID: 6400972674292745325}
-  - component: {fileID: 26760416983964962}
   m_Layer: 0
   m_Name: ExplosionWArningZone
   m_TagString: Bullet
@@ -30,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 4449123702401205289}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -1, z: 0}
+  m_LocalPosition: {x: 0, y: -0.2, z: 0}
   m_LocalScale: {x: 1, y: 0.01, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -137,22 +136,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!111 &26760416983964962
-Animation:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4449123702401205289}
-  m_Enabled: 0
-  serializedVersion: 4
-  m_Animation: {fileID: 7400000, guid: 10b3aca0a675d7243828d0605cbef653, type: 2}
-  m_Animations: []
-  m_WrapMode: 0
-  m_PlayAutomatically: 1
-  m_AnimatePhysics: 0
-  m_UpdateMode: 0
-  m_CullingType: 0
 --- !u!1 &8570068880541469392
 GameObject:
   m_ObjectHideFlags: 0

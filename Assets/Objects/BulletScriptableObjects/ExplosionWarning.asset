@@ -13,12 +13,12 @@ MonoBehaviour:
   m_Name: ExplosionWarning
   m_EditorClassIdentifier: 
   prefab: {fileID: 8570068880541469392, guid: 6b4f8b660780bb14480d32502e61b17e, type: 3}
-  objectSize: {x: 1, y: 1, z: 1}
+  objectSize: {x: 3, y: 3, z: 3}
   coneAngle: 360
   isTargettingPlayer: 0
   spawnRate: 0
-  bulletCount: 15
-  spawnRadius: 10
+  bulletCount: 1
+  spawnRadius: 0
   direction: 0
   directionChange: 0
   directionSwapCounter: 0
@@ -28,6 +28,7 @@ MonoBehaviour:
   angularSpeed: 0
   angularSpeedDelay: 0
   rotateAroundObject: 0
-  abilityLifetime: 0.5
+  abilityLifetime: 0.8
   abilityDecay: 0
-  active: 0
+  earlyDecay: 0
+  active: 1

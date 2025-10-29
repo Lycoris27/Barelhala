@@ -8,7 +8,7 @@ public abstract class AbilityBaseScript : ScriptableObject
 
     // Initial Variables
     [Header("Initial Variables")]
-    //public abstract float InitialDelay { get; } // time before ability starts
+    public abstract float InitialDelay { get; } // time before ability starts
     public abstract Vector3 Size { get; } // scale of ability size
     public abstract bool IsTargettingPlayer { get; } // If ability targets player, not heat-seeking
     public abstract float ConeAngle { get; } // The range for which the objects shoot out from the character

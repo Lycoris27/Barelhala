@@ -2,6 +2,7 @@ using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 using System;
+using UnityEngine.SceneManagement;
 
 public class GlobalEvents: MonoBehaviour
 {
@@ -21,6 +22,11 @@ public class GlobalEvents: MonoBehaviour
         }
         Instance = this;
         DontDestroyOnLoad(gameObject); // optional if you want it persistent
+        SceneManager.sceneLoaded += OnSceneLoaded;
+    }
+    private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        StopAllCoroutines();
     }
 
     public static void InvokeOnAbilityCompleted()

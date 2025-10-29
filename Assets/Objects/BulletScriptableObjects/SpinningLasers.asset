@@ -15,15 +15,15 @@ MonoBehaviour:
   prefab: {fileID: 7835279901505979565, guid: b58ba40d17c3ac847966ea9d385e5678, type: 3}
   initialDelay: 0
   objectSize: {x: 1, y: 1, z: 1}
-  isTargettingPlayer: 0
   coneAngle: 360
+  isTargettingPlayer: 0
+  spawnRate: 0
+  bulletCount: 5
+  spawnRadius: 2
   direction: 0
   directionChange: 0
   directionSwapCounter: 0
   repeatingCounter: 0
-  spawnRate: 0
-  bulletCount: 5
-  spawnRadius: 0
   linearSpeed: 0
   linearSpeedDelay: 0
   angularSpeed: 0.5
@@ -31,4 +31,4 @@ MonoBehaviour:
   rotateAroundObject: 1
   abilityLifetime: 5
   abilityDecay: 5
-  active: 0
+  earlyDecay: 0

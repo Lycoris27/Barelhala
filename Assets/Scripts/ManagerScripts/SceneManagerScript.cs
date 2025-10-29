@@ -21,6 +21,11 @@ public class SceneManagerScript : MonoBehaviour
         SceneManager.LoadScene(sceneIndex);
         Time.timeScale = 1;
     }
+    public void ReloadCurrentScene()
+    {
+        Scene currentScene = SceneManager.GetActiveScene();
+        SceneManager.LoadScene(currentScene.buildIndex);
+    }
     public void QuitGame()
     {
         Application.Quit();

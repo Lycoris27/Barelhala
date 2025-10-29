@@ -10,15 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: aaa044fab9d610e42baf618c93960c66, type: 3}
-  m_Name: Explosion01
+  m_Name: explosion
   m_EditorClassIdentifier: 
-  prefab: {fileID: 2200559856145626472, guid: 5c8a2453f993ce340ab61bd4b5449fef, type: 3}
-  objectSize: {x: 1, y: 1, z: 1}
+  prefab: {fileID: 6948847363818476012, guid: 5c8a2453f993ce340ab61bd4b5449fef, type: 3}
+  initialDelay: 0.8
+  objectSize: {x: 5, y: 5, z: 5}
   coneAngle: 360
   isTargettingPlayer: 0
   spawnRate: 0
-  bulletCount: 15
-  spawnRadius: 10
+  bulletCount: 1
+  spawnRadius: 0
   direction: 0
   directionChange: 0
   directionSwapCounter: 0
@@ -28,6 +29,6 @@ MonoBehaviour:
   angularSpeed: 0
   angularSpeedDelay: 0
   rotateAroundObject: 0
-  abilityLifetime: 5
+  abilityLifetime: 1
   abilityDecay: 0
-  active: 1
+  earlyDecay: 0
