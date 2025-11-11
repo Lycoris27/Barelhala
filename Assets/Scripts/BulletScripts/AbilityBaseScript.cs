@@ -38,6 +38,8 @@ public abstract class AbilityBaseScript : ScriptableObject
 
     // End Variables
     [Header("End Variables")]
+
+    public abstract bool IsLifetimeInfinite { get;  }
     public abstract float Lifetime { get; } // Time before ability ends
     public abstract float Decay { get; } // Time after ability ends to get rid of all persisting objects
 

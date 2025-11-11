@@ -14,21 +14,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefab: {fileID: 8570068880541469392, guid: f199282be24931b40a1b87184fcbe48d, type: 3}
   initialDelay: 0
-  objectSize: {x: 0, y: 0, z: 0}
-  isTargettingPlayer: 0
-  coneAngle: 360
+  objectSize: {x: 1, y: 1, z: 1}
+  coneAngle: 0
+  isTargettingPlayer: 1
+  spawnRate: 1
+  bulletCount: 1
+  spawnRadius: 1
   direction: 0
   directionChange: 0
   directionSwapCounter: 0
   repeatingCounter: 0
-  spawnRate: 0
-  bulletCount: 0
-  spawnRadius: 0
-  linearSpeed: 0
+  linearSpeed: 4
   linearSpeedDelay: 0
   angularSpeed: 0
   angularSpeedDelay: 0
   rotateAroundObject: 0
-  abilityLifetime: 0
-  abilityDecay: 0
-  active: 0
+  abilityLifetime: 10
+  abilityDecay: 1
+  earlyDecay: 0

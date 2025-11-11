@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: -7245522727875629199}
   - component: {fileID: 1598643053553466274}
   - component: {fileID: 6500527879958465416}
+  - component: {fileID: 1079283822371984516}
   m_Layer: 0
   m_Name: Bullet
   m_TagString: Bullet
@@ -145,7 +146,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8570068880541469392}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ec0de3daf672f8341a92fae1857f2a8a, type: 3}
   m_Name: 
@@ -158,8 +159,29 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8570068880541469392}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d2fd8d26ec72db447a6a0be88119f1ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1079283822371984516
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8570068880541469392}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed996add1fe77c24fadae58700f53ceb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerCollision: 1
+  onPlayerCollideDelete: 1
+  onWallCollideDelete: 1
+  onWallCollideBounce: 0
+  bounceDampening: 1
+  goonCollision: 0
+  onGoonCollideDelete: 0
+  crateCollision: 1
+  onCrateCollideDelete: 1

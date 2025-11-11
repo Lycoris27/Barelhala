@@ -31,7 +31,8 @@ public partial class AttackAction : Action
         }
 
         // Trigger the ability immediately
-        Attacks.Value.ActivateAbility(Agent.Value);
+        
+        Attacks.Value.ActivateAbility(this.GameObject);
 
         // Node is done, tree can progress
         return Status.Success;

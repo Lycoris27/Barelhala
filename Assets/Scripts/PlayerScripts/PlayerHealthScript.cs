@@ -38,19 +38,31 @@ public class PlayerHealthScript : MonoBehaviour
         if (canTakeDamage)
         {
             currentHealth += 1;
-            PlaytestDamage();
+            //PlaytestDamage();
             if (currentHealth <= maxPlayerHealth)
             {
                 UpdateHealthUI();
                 StartCoroutine(ActivatePlayerImmunity());
+
+                if(currentHealth == maxPlayerHealth - 1)
+                {
+                    PlayerAbilityHolder holder = FindFirstObjectByType<PlayerAbilityHolder>();
+                    holder.ActivateAbility01.Invoke();
+                }
+                if (currentHealth == maxPlayerHealth)
+                {
+                    PlayerAbilityHolder holder = FindFirstObjectByType<PlayerAbilityHolder>();
+                    holder.ActivateAbility02.Invoke();
+                }
             }
             else if (currentHealth > maxPlayerHealth)
             {
-                PlaytestDeaths();
+                //PlaytestDeaths();
                 ConditionScript.LossConditionMet();
             }
         }
     }
+    /*
     public TextMeshProUGUI damageText;
     public TextMeshProUGUI deathText;
     public int damageInt;
@@ -72,7 +84,7 @@ public class PlayerHealthScript : MonoBehaviour
         damageText.text = $"Damage taken: {damageInt}";
         deathText.text = $"Deaths: {deathText}";
     }
-
+    */
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
         if (scene.buildIndex == 0) return;
@@ -82,7 +94,7 @@ public class PlayerHealthScript : MonoBehaviour
 
     private void PlayerRecoverDamage() // when called, it reduces the players health by 1 stage, the lower the further from death
     {
-        if (currentHealth > 0)
+        if (currentHealth > 4 )
         {
             currentHealth -= 1;
             UpdateHealthUI();

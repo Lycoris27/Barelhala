@@ -26,9 +26,7 @@ public partial class NavigateToPlayerAction : Action
 
     protected override Status OnStart()
     {
-        if (Agent.Value == null || Target.Value == null)
-            return Status.Failure;
-        m_NavMeshAgent = Agent.Value.GetComponentInChildren<NavMeshAgent>();
+        m_NavMeshAgent = this.GameObject.GetComponentInChildren<NavMeshAgent>();
 
         if (isMoving.Value) { m_NavMeshAgent.isStopped = false; }
 

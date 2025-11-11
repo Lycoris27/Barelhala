@@ -9,6 +9,9 @@ TagManager:
   - Wall
   - HUD
   - Bullet
+  - Goon
+  - Crate
+  - GoonHolder
   layers:
   - Default
   - TransparentFX

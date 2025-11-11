@@ -82,6 +82,10 @@ public class AttackScriptableObject : AbilityBaseScript
     public override bool RotateAroundObject => rotateAroundObject;
 
     [Header("End Variables")]
+
+    [SerializeField] private bool isLifetimeInfinite = false;
+    public override bool IsLifetimeInfinite => isLifetimeInfinite;
+
     [SerializeField] private float abilityLifetime;
     public override float Lifetime => abilityLifetime;
 
@@ -114,12 +118,12 @@ public class AttackScriptableObject : AbilityBaseScript
         GenerateBullets();
         // Schedule lifetime cleanup
 
-
-        GlobalEvents.StartDelay(Lifetime, EndAbility);
-            if (earlyDecay)
-                CleanupBullets();
-
-
+        if (!isLifetimeInfinite)
+        {
+            GlobalEvents.StartDelay(Lifetime, EndAbility);
+        }
+        if (earlyDecay)
+            CleanupBullets();
     }
     private void EndAbility()
     {
@@ -149,7 +153,6 @@ public class AttackScriptableObject : AbilityBaseScript
 
     private void GenerateBullets()
     {
-        if (!active) return;
 
         delayedObjects.Clear();
 
@@ -161,7 +164,6 @@ public class AttackScriptableObject : AbilityBaseScript
         Action spawnLoop = null;
         spawnLoop = () =>
         {
-            if (!active) return;
 
             delayedObjects.Clear();
 
@@ -204,6 +206,8 @@ public class AttackScriptableObject : AbilityBaseScript
 
             // Repeat after spawnRate delay
             GlobalEvents.StartDelay(1 / SpawnRate, spawnLoop);
+
+            if (!active) return;
         };
         spawnLoop.Invoke();
     }
