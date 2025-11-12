@@ -176,12 +176,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed996add1fe77c24fadae58700f53ceb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerCollision: 1
-  onPlayerCollideDelete: 1
-  onWallCollideDelete: 1
+  playerCollision: 0
+  onPlayerCollideDelete: 0
+  onWallCollideDelete: 0
   onWallCollideBounce: 0
   bounceDampening: 1
-  goonCollision: 0
+  goonCollision: 1
   onGoonCollideDelete: 0
   crateCollision: 1
   onCrateCollideDelete: 1

@@ -12,7 +12,7 @@ public class CollisionHandler : MonoBehaviour
     [Header("Goon Interaction")]
     [SerializeField] private bool goonCollision = false; // On goon collide, deals damage
     [SerializeField] private bool onGoonCollideDelete = false; // On goon collide, kills bullet
-    [Header("bonk")]
+    [Header("Crate Interaction")]
     [SerializeField] private bool crateCollision = false; // On collision with a crate, deals damage to it
     [SerializeField] private bool onCrateCollideDelete = false;
 

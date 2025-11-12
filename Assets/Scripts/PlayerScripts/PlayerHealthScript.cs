@@ -48,11 +48,13 @@ public class PlayerHealthScript : MonoBehaviour
                 {
                     PlayerAbilityHolder holder = FindFirstObjectByType<PlayerAbilityHolder>();
                     holder.ActivateAbility01.Invoke();
+                    print("BinkBonkBonk");
                 }
                 if (currentHealth == maxPlayerHealth)
                 {
                     PlayerAbilityHolder holder = FindFirstObjectByType<PlayerAbilityHolder>();
                     holder.ActivateAbility02.Invoke();
+                    print("Bingus Tingus");
                 }
             }
             else if (currentHealth > maxPlayerHealth)

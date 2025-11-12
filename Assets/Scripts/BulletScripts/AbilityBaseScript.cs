@@ -42,6 +42,7 @@ public abstract class AbilityBaseScript : ScriptableObject
     public abstract bool IsLifetimeInfinite { get;  }
     public abstract float Lifetime { get; } // Time before ability ends
     public abstract float Decay { get; } // Time after ability ends to get rid of all persisting objects
+    public abstract float DecayDelay { get; }
 
     public abstract void ActivateAbility(GameObject ownerObject);
 }

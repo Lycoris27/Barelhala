@@ -94,6 +94,9 @@ public class AttackScriptableObject : AbilityBaseScript
 
     [SerializeField] private bool earlyDecay = false;
 
+    [SerializeField] private float decayDelay = 0;
+    public override float DecayDelay => decayDelay;
+
     // Unique Ability Variables
     private bool active = false;
 
@@ -111,7 +114,7 @@ public class AttackScriptableObject : AbilityBaseScript
         if (playerRef == null) playerRef = GameObject.FindWithTag("Player");
         active = true;
 
-        Debug.Log($"self reference = {selfRef}, Self Ref = {SelfRef}");
+        //Debug.Log($"self reference = {selfRef}, Self Ref = {SelfRef}");
 
         // Delay before spawning bullets
 
@@ -135,20 +138,24 @@ public class AttackScriptableObject : AbilityBaseScript
     {
         float totalDecayTime = Decay != 0 ? 1 / Decay : 0f;
 
-        for (int i = 0; i < spawnedObjects.Count; i++)
+        GlobalEvents.StartDelay(DecayDelay, () =>
         {
-            GameObject obj = spawnedObjects[i];
-            if (obj != null)
+
+            for (int i = 0; i < spawnedObjects.Count; i++)
             {
-                float delay = totalDecayTime * i;
-                GlobalEvents.StartDelay(delay, () =>
+                GameObject obj = spawnedObjects[i];
+                if (obj != null)
                 {
-                    if (obj != null)
-                        GameObject.Destroy(obj);
-                });
+                    float delay = totalDecayTime * i;
+                    GlobalEvents.StartDelay(delay, () =>
+                    {
+                        if (obj != null)
+                            GameObject.Destroy(obj);
+                    });
+                }
             }
-        }
-        spawnedObjects.Clear();
+            spawnedObjects.Clear();
+        });
     }
 
     private void GenerateBullets()
