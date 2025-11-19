@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 8730761442352921891}
   - component: {fileID: 1504285935507688933}
   - component: {fileID: 8580903394733455182}
+  - component: {fileID: 3454947299151102310}
   m_Layer: 0
   m_Name: ExplosionRigidbody
   m_TagString: Bullet
@@ -159,6 +160,27 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &3454947299151102310
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4314209289036841179}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed996add1fe77c24fadae58700f53ceb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerCollision: 0
+  onPlayerCollideDelete: 0
+  onWallCollideDelete: 0
+  onWallCollideBounce: 0
+  bounceDampening: 1
+  goonCollision: 1
+  onGoonCollideDelete: 0
+  crateCollision: 1
+  onCrateCollideDelete: 0
 --- !u!1 &6948847363818476012
 GameObject:
   m_ObjectHideFlags: 0
@@ -168,7 +190,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6705030038711230516}
-  - component: {fileID: 5195556022836267766}
   m_Layer: 0
   m_Name: PlayerExplosion
   m_TagString: Untagged
@@ -192,24 +213,3 @@ Transform:
   - {fileID: 3056080690276372747}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &5195556022836267766
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6948847363818476012}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ed996add1fe77c24fadae58700f53ceb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  playerCollision: 0
-  onPlayerCollideDelete: 0
-  onWallCollideDelete: 0
-  onWallCollideBounce: 0
-  bounceDampening: 1
-  goonCollision: 1
-  onGoonCollideDelete: 0
-  crateCollision: 0
-  onCrateCollideDelete: 0

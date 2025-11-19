@@ -33,4 +33,4 @@ MonoBehaviour:
   abilityLifetime: 0
   abilityDecay: 1
   earlyDecay: 1
-  decayDelay: 1
+  decayDelay: 2

@@ -17,7 +17,7 @@ public class AttackScriptableObject : AbilityBaseScript
     [SerializeField] private float initialDelay = 0f;
     public override float InitialDelay => initialDelay;
 
-    [SerializeField] private Vector3 objectSize = new Vector3(1f,1f,1f);
+    [SerializeField] private Vector3 objectSize = new Vector3(1f, 1f, 1f);
     public override Vector3 Size => objectSize;
 
     [Tooltip("if shooting multiple bullets, will determine the range over which bullets can be shot " +
@@ -100,34 +100,37 @@ public class AttackScriptableObject : AbilityBaseScript
     // Unique Ability Variables
     private bool active = false;
 
-    private List<GameObject> spawnedObjects = new List<GameObject>();
-    private List<GameObject> delayedObjects = new List<GameObject>();
+    // Replaced List with FIFO Queue
+    private Queue<GameObject> spawnedObjects = new Queue<GameObject>();
 
-    private GameObject playerRef; // = null;
+    private GameObject playerRef;
     private GameObject selfRef;
-    //public void Start() { playerRef = GameObject.FindWithTag("Player"); }
 
+
+
+    // -----------------------------------------------------------
+    // ACTIVATE
+    // -----------------------------------------------------------
     public override void ActivateAbility(GameObject SelfRef)
     {
-
         if (selfRef == null) selfRef = SelfRef;
         if (playerRef == null) playerRef = GameObject.FindWithTag("Player");
         active = true;
 
-        //Debug.Log($"self reference = {selfRef}, Self Ref = {SelfRef}");
-
-        // Delay before spawning bullets
-
         GenerateBullets();
-        // Schedule lifetime cleanup
 
         if (!isLifetimeInfinite)
-        {
             GlobalEvents.StartDelay(Lifetime, EndAbility);
-        }
+
         if (earlyDecay)
             CleanupBullets();
     }
+
+
+
+    // -----------------------------------------------------------
+    // END + CLEANUP
+    // -----------------------------------------------------------
     private void EndAbility()
     {
         active = false;
@@ -136,33 +139,34 @@ public class AttackScriptableObject : AbilityBaseScript
 
     private void CleanupBullets()
     {
-        float totalDecayTime = Decay != 0 ? 1 / Decay : 0f;
+        float delay = Decay != 0f ? 1f / Decay : 0f;
 
         GlobalEvents.StartDelay(DecayDelay, () =>
         {
-
-            for (int i = 0; i < spawnedObjects.Count; i++)
-            {
-                GameObject obj = spawnedObjects[i];
-                if (obj != null)
-                {
-                    float delay = totalDecayTime * i;
-                    GlobalEvents.StartDelay(delay, () =>
-                    {
-                        if (obj != null)
-                            GameObject.Destroy(obj);
-                    });
-                }
-            }
-            spawnedObjects.Clear();
+            DestroyNextBullet(delay);
         });
     }
 
+    private void DestroyNextBullet(float delay)
+    {
+        if (spawnedObjects.Count == 0)
+            return;
+
+        GameObject obj = spawnedObjects.Dequeue();
+        if (obj != null)
+            GameObject.Destroy(obj);
+
+        GlobalEvents.StartDelay(delay, () =>
+        {
+            DestroyNextBullet(delay);
+        });
+    }
+
+    // -----------------------------------------------------------
+    // BULLET GENERATION
+    // -----------------------------------------------------------
     private void GenerateBullets()
     {
-
-        delayedObjects.Clear();
-
         float currentRotation = 0f;
         float halfConeAngle = coneAngle / 2f;
         bool flipRotation = false;
@@ -171,12 +175,17 @@ public class AttackScriptableObject : AbilityBaseScript
         Action spawnLoop = null;
         spawnLoop = () =>
         {
+            if (!active) return;
+            if (selfRef == null) return;
 
-            delayedObjects.Clear();
+            // Track bullets spawned *only this cycle*
+            List<GameObject> newlySpawned = new List<GameObject>();
+
 
             Vector3 coneForward = (IsTargettingPlayer && playerRef != null)
                 ? (playerRef.transform.position - selfRef.transform.position).normalized
                 : Quaternion.Euler(0f, direction, 0f) * Vector3.forward;
+
 
             for (int i = 0; i < SpawnCount; i++)
             {
@@ -192,46 +201,58 @@ public class AttackScriptableObject : AbilityBaseScript
                 GlobalEvents.StartDelay(InitialDelay, () =>
                 {
                     GameObject bullet = Instantiate(Prefab, spawnPos, bulletRotation);
+                    bullet.transform.localScale = Size;
 
-                    bullet.transform.localScale = new Vector3(Size.x, Size.y, Size.z);
-
-                    spawnedObjects.Add(bullet);
-                    delayedObjects.Add(bullet);
+                    spawnedObjects.Enqueue(bullet); // F I F O
+                    newlySpawned.Add(bullet);
                 });
             }
-            ActivateLinearMomentum();
-            ActivateAngularMomentum();
 
-            // Handle rotation changes
+
+            // Apply forces to the bullets spawned this cycle
+            ActivateLinearMomentum(newlySpawned);
+            ActivateAngularMomentum(newlySpawned);
+
+
+            // Rotation pattern logic
             shotCounter++;
             if (shotCounter == DirectionSwapCounter)
             {
                 flipRotation = !flipRotation;
-                if (repeatingCounter) shotCounter = 0;
+                if (RepeatingCounter) shotCounter = 0;
             }
             currentRotation += flipRotation ? -DirectionChange : DirectionChange;
 
-            // Repeat after spawnRate delay
-            GlobalEvents.StartDelay(1 / SpawnRate, spawnLoop);
 
-            if (!active) return;
+            // Repeat
+            GlobalEvents.StartDelay(1f / SpawnRate, spawnLoop);
         };
+
         spawnLoop.Invoke();
     }
-    private void ActivateLinearMomentum()
+
+
+
+    // -----------------------------------------------------------
+    // MOMENTUM
+    // -----------------------------------------------------------
+    private void ActivateLinearMomentum(List<GameObject> newlySpawned)
     {
         GlobalEvents.StartDelay(LinearSpeedDelay, () =>
         {
-            foreach (GameObject bullet in delayedObjects)
+            foreach (GameObject bullet in newlySpawned)
             {
                 if (bullet == null) continue;
+
                 Rigidbody rb = bullet.GetComponent<Rigidbody>();
                 if (rb != null)
                     rb.linearVelocity = bullet.transform.forward * LinearSpeed;
             }
         });
     }
-    private void ActivateAngularMomentum()
+
+
+    private void ActivateAngularMomentum(List<GameObject> newlySpawned)
     {
         GlobalEvents.StartDelay(AngularSpeedDelay, () =>
         {
@@ -241,20 +262,22 @@ public class AttackScriptableObject : AbilityBaseScript
                 GameObject orbitContainer = Instantiate(orbitContainerPrefab, selfRef.transform.position, Quaternion.identity);
                 orbitContainer.transform.parent = selfRef.transform;
 
-                foreach (GameObject bullet in delayedObjects)
+                foreach (GameObject bullet in newlySpawned)
                 {
                     if (bullet == null) continue;
                     bullet.transform.parent = orbitContainer.transform;
                 }
+
                 Rigidbody rb = orbitContainer.GetComponent<Rigidbody>();
                 if (rb != null)
                     rb.angularVelocity = orbitContainer.transform.up * AngularSpeed;
             }
             else
             {
-                foreach (GameObject bullet in delayedObjects)
+                foreach (GameObject bullet in newlySpawned)
                 {
                     if (bullet == null) continue;
+
                     Rigidbody rb = bullet.GetComponent<Rigidbody>();
                     if (rb != null)
                         rb.angularVelocity = bullet.transform.up * AngularSpeed;

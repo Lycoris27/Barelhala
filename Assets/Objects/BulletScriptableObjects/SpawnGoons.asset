@@ -18,7 +18,7 @@ MonoBehaviour:
   coneAngle: 360
   isTargettingPlayer: 1
   spawnRate: 0
-  bulletCount: 8
+  bulletCount: 1
   spawnRadius: 8
   direction: 0
   directionChange: 0
@@ -33,3 +33,4 @@ MonoBehaviour:
   abilityLifetime: 120
   abilityDecay: 0
   earlyDecay: 0
+  decayDelay: 0

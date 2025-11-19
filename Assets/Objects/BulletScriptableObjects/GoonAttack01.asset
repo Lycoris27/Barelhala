@@ -29,6 +29,8 @@ MonoBehaviour:
   angularSpeed: 0
   angularSpeedDelay: 0
   rotateAroundObject: 0
-  abilityLifetime: 10
+  isLifetimeInfinite: 0
+  abilityLifetime: 6
   abilityDecay: 1
   earlyDecay: 0
+  decayDelay: 0

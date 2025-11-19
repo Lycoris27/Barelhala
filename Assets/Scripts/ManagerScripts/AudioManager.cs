@@ -11,6 +11,9 @@ public class AudioManager : MonoBehaviour
     }
     */
 
+    [SerializeField] private string eventName = "Play_Song";
+    public void PlayEvent() => AkUnitySoundEngine.PostEvent(eventName, gameObject);
+
     public void StopEvent(string eventName, GameObject emitter = null)
     {
         if (emitter == null) { emitter = gameObject; }
@@ -18,9 +21,6 @@ public class AudioManager : MonoBehaviour
     }
 
     //[SerializeField] private string eventName = "Play_Song";
-
-    [SerializeField] private string eventName = "Play_Song";
-    public void PlayEvent() => AkUnitySoundEngine.PostEvent(eventName, gameObject);
 
 
 
