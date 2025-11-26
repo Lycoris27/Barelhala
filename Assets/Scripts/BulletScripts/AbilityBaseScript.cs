@@ -17,7 +17,6 @@ public abstract class AbilityBaseScript : ScriptableObject
 
     // Durational Variables
     [Header("Spawning Variables")]
-    public abstract float SpawnRate { get; } // Times the ability will trigger in 1 second
     public abstract float SpawnCount { get; } // Amount of objects spawned when activated
     public abstract float SpawnRadius { get; }
 

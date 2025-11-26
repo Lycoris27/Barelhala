@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System;
 
+
 [CreateAssetMenu(fileName = "NewAttackAbility", menuName = "Scriptable Objects/Create new attack")]
 public class AttackScriptableObject : AbilityBaseScript
 {
@@ -36,7 +37,10 @@ public class AttackScriptableObject : AbilityBaseScript
     [Header("Spawning Variables")]
 
     [SerializeField] private float spawnRate;
-    public override float SpawnRate => spawnRate;
+
+
+
+
 
     [SerializeField] private float bulletCount;
     public override float SpawnCount => bulletCount;
@@ -49,6 +53,8 @@ public class AttackScriptableObject : AbilityBaseScript
     [Tooltip("When not targetting the player, determines the direction that the bullets are pointing at")]
     [SerializeField] private float direction;
     public override float Direction => direction;
+
+    [SerializeField] private bool randomDirection = false;
 
     [Tooltip("After shooting out objects, the change in direction from the last")]
     [SerializeField] private int directionChange;
@@ -106,7 +112,9 @@ public class AttackScriptableObject : AbilityBaseScript
     private GameObject playerRef;
     private GameObject selfRef;
 
-
+    private int newDirectChange;
+    
+    
 
     // -----------------------------------------------------------
     // ACTIVATE
@@ -125,8 +133,6 @@ public class AttackScriptableObject : AbilityBaseScript
         if (earlyDecay)
             CleanupBullets();
     }
-
-
 
     // -----------------------------------------------------------
     // END + CLEANUP
@@ -149,7 +155,7 @@ public class AttackScriptableObject : AbilityBaseScript
 
     private void DestroyNextBullet(float delay)
     {
-        if (spawnedObjects.Count == 0)
+        if (spawnedObjects.Count == 0 || active)
             return;
 
         GameObject obj = spawnedObjects.Dequeue();
@@ -171,6 +177,7 @@ public class AttackScriptableObject : AbilityBaseScript
         float halfConeAngle = coneAngle / 2f;
         bool flipRotation = false;
         int shotCounter = 0;
+        bool firstCounterComplete = false;
 
         Action spawnLoop = null;
         spawnLoop = () =>
@@ -216,16 +223,29 @@ public class AttackScriptableObject : AbilityBaseScript
 
             // Rotation pattern logic
             shotCounter++;
-            if (shotCounter == DirectionSwapCounter)
+            if (shotCounter == DirectionSwapCounter && !firstCounterComplete)
+            {
+                flipRotation = !flipRotation;
+                if (RepeatingCounter) shotCounter = 0;
+                firstCounterComplete = !firstCounterComplete; 
+            }
+            else if (shotCounter == 2 * DirectionSwapCounter && firstCounterComplete)
             {
                 flipRotation = !flipRotation;
                 if (RepeatingCounter) shotCounter = 0;
             }
-            currentRotation += flipRotation ? -DirectionChange : DirectionChange;
+
+            if (!randomDirection)
+                currentRotation += flipRotation ? -DirectionChange : DirectionChange;
+            else if (randomDirection)
+            {
+                newDirectChange = UnityEngine.Random.Range(-DirectionChange, DirectionChange);
+                currentRotation = newDirectChange;
+            }
 
 
             // Repeat
-            GlobalEvents.StartDelay(1f / SpawnRate, spawnLoop);
+            GlobalEvents.StartDelay(1f / spawnRate, spawnLoop);
         };
 
         spawnLoop.Invoke();
