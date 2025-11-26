@@ -17,6 +17,7 @@ public class Health: MonoBehaviour
     private void ReduceHealth()
     {
         healthCurrent--;
+        print($"Wall has been damaged and has {healthCurrent} health left");
 
         if (healthCurrent <= 0)
         {
