@@ -17,7 +17,6 @@ public class CollisionHandler : MonoBehaviour
     [SerializeField] private bool onCrateCollideDelete = false;
 
     public static event System.Action OnTriggerPlayer;
-    public static event System.Action OnTriggerGoon;
     private Rigidbody rb;
 
     private void Awake()
@@ -33,6 +32,7 @@ public class CollisionHandler : MonoBehaviour
         if (other.CompareTag("Player") && playerCollision)
         {
             OnTriggerPlayer?.Invoke();
+            Debug.Log("Bonk");
             if(onPlayerCollideDelete)
             {
                 Destroy(this.gameObject);

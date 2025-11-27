@@ -20,13 +20,13 @@ public class PlayerHealthScript : MonoBehaviour
 
     private void OnEnable()
     {
-        PlayerCollision.OnTriggerPlayer += PlayerTakeDamage;
+        CollisionHandler.OnTriggerPlayer += PlayerTakeDamage;
         LevelManagerScript.OnResetLevel += ResetScript;
         SceneManager.sceneLoaded += OnSceneLoaded;
     }
     private void OnDisable()
     {
-        PlayerCollision.OnTriggerPlayer -= PlayerTakeDamage;
+        CollisionHandler.OnTriggerPlayer -= PlayerTakeDamage;
         LevelManagerScript.OnResetLevel -= ResetScript;
         SceneManager.sceneLoaded -= OnSceneLoaded;
     }
@@ -38,7 +38,7 @@ public class PlayerHealthScript : MonoBehaviour
         if (canTakeDamage)
         {
             currentHealth += 1;
-            //PlaytestDamage();
+            Debug.Log("HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH");
             if (currentHealth <= maxPlayerHealth)
             {
                 UpdateHealthUI();

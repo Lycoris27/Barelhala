@@ -106,7 +106,7 @@ CapsuleCollider:
     m_Bits: 0
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
-  m_ProvidesContacts: 0
+  m_ProvidesContacts: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 0.5
@@ -167,3 +167,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ability01: {fileID: 11400000, guid: 521e02cff270a504aaed706d16ad8b0e, type: 2}
   ability02: {fileID: 11400000, guid: e66c99eca3772b342bd6ee6d0834db83, type: 2}
+  ActivateAbility01:
+    m_PersistentCalls:
+      m_Calls: []
+  ActivateAbility02:
+    m_PersistentCalls:
+      m_Calls: []

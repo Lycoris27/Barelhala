@@ -14,9 +14,9 @@ GameObject:
   - component: {fileID: 4457161702047693809}
   - component: {fileID: 6980554421233638552}
   - component: {fileID: 1292711672928324374}
-  - component: {fileID: 1949025938671393357}
+  - component: {fileID: 5597064072096906878}
   m_Layer: 0
-  m_Name: Enemy
+  m_Name: Boss02
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -162,7 +162,7 @@ NavMeshAgent:
   m_BaseOffset: 1
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 0
---- !u!114 &1949025938671393357
+--- !u!114 &5597064072096906878
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -174,15 +174,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f0038c16c34866b4f9e25c9c0dc0f7e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Graph: {fileID: -6300254774745892841, guid: 3f636e18d18a82747bf6e93ea9c64334, type: 2}
+  m_Graph: {fileID: -6300254774745892841, guid: 18f6eb47db13f4245add330b7844a5bc, type: 2}
   m_BlackboardVariableOverridesList:
-  - rid: 8579469832155299909
+  - rid: 8579470059701272576
   m_IsInitialised: 0
   m_IsStarted: 0
   references:
     version: 2
     RefIds:
-    - rid: 8579469832155299909
+    - rid: 8579470059701272576
       type: {class: 'BlackboardVariable`1[[UnityEngine.GameObject, UnityEngine.CoreModule]]', ns: Unity.Behavior, asm: Unity.Behavior}
       data:
         GUID:

@@ -13,8 +13,8 @@ GameObject:
   - component: {fileID: 5371961048887171215}
   - component: {fileID: 8730761442352921891}
   - component: {fileID: 1504285935507688933}
-  - component: {fileID: 3222475236104670966}
   - component: {fileID: 8580903394733455182}
+  - component: {fileID: 5954218491999043720}
   m_Layer: 0
   m_Name: ExplosionRigidbody
   m_TagString: Bullet
@@ -133,19 +133,6 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &3222475236104670966
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4314209289036841179}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec0de3daf672f8341a92fae1857f2a8a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  destroyOnCollide: 0
 --- !u!54 &8580903394733455182
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -173,6 +160,27 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &5954218491999043720
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4314209289036841179}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed996add1fe77c24fadae58700f53ceb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerCollision: 1
+  onPlayerCollideDelete: 0
+  onWallCollideDelete: 0
+  onWallCollideBounce: 0
+  bounceDampening: 1
+  goonCollision: 0
+  onGoonCollideDelete: 0
+  crateCollision: 0
+  onCrateCollideDelete: 0
 --- !u!1 &6948847363818476012
 GameObject:
   m_ObjectHideFlags: 0

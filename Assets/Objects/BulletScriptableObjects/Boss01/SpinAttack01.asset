@@ -17,18 +17,15 @@ MonoBehaviour:
   objectSize: {x: 1, y: 1, z: 1}
   coneAngle: 0
   isTargettingPlayer: 0
-  spawnRate: 1
-  spawnRateIncrease: 2
-  timeToSpawnRateChange: 5
-  secondSpawnRateIncrease: -2
+  spawnRate: 40
   bulletCount: 1
   spawnRadius: 0
   direction: 0
   randomDirection: 0
-  directionChange: 13
+  directionChange: 17
   directionSwapCounter: 0
   repeatingCounter: 0
-  linearSpeed: 20
+  linearSpeed: 30
   linearSpeedDelay: 0
   angularSpeed: 0
   angularSpeedDelay: 0
