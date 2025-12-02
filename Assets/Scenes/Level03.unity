@@ -360,6 +360,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1292711672928324374, guid: 52c8a022a30806a4f964876ff513127c, type: 3}
+      propertyPath: m_Acceleration
+      value: 10000
+      objectReference: {fileID: 0}
     - target: {fileID: 5597064072096906878, guid: 52c8a022a30806a4f964876ff513127c, type: 3}
       propertyPath: 'managedReferences[8579470059701273014]'
       value: 'Unity.Behavior Unity.Behavior.BlackboardVariable`1[[UnityEngine.GameObject,

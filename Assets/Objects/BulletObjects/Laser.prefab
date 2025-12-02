@@ -11,8 +11,8 @@ GameObject:
   - component: {fileID: 6641382374839542552}
   - component: {fileID: 1640073929320865457}
   - component: {fileID: 1287345267754295731}
-  - component: {fileID: 5411604215529917045}
   - component: {fileID: 7317060566980070638}
+  - component: {fileID: 6406914860738983581}
   m_Layer: 0
   m_Name: LaserObject
   m_TagString: Bullet
@@ -88,19 +88,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &5411604215529917045
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1829393149940891661}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec0de3daf672f8341a92fae1857f2a8a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  destroyOnCollide: 0
 --- !u!64 &7317060566980070638
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -123,6 +110,27 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &6406914860738983581
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1829393149940891661}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed996add1fe77c24fadae58700f53ceb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerCollision: 1
+  onPlayerCollideDelete: 0
+  onWallCollideDelete: 0
+  onWallCollideBounce: 0
+  bounceDampening: 1
+  goonCollision: 0
+  onGoonCollideDelete: 0
+  crateCollision: 0
+  onCrateCollideDelete: 0
 --- !u!1 &7835279901505979565
 GameObject:
   m_ObjectHideFlags: 0

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: SpinningLasers
   m_EditorClassIdentifier: 
   prefab: {fileID: 7835279901505979565, guid: b58ba40d17c3ac847966ea9d385e5678, type: 3}
-  initialDelay: 0
+  initialDelay: 0.8
   objectSize: {x: 1, y: 1, z: 1}
   coneAngle: 360
   isTargettingPlayer: 0
@@ -21,6 +21,7 @@ MonoBehaviour:
   bulletCount: 5
   spawnRadius: 2
   direction: 0
+  randomDirection: 0
   directionChange: 0
   directionSwapCounter: 0
   repeatingCounter: 0
@@ -29,6 +30,8 @@ MonoBehaviour:
   angularSpeed: 0.5
   angularSpeedDelay: 2
   rotateAroundObject: 1
+  isLifetimeInfinite: 0
   abilityLifetime: 5
   abilityDecay: 5
   earlyDecay: 0
+  decayDelay: 0

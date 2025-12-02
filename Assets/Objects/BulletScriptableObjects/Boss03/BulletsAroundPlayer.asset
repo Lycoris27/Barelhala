@@ -12,23 +12,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aaa044fab9d610e42baf618c93960c66, type: 3}
   m_Name: BulletsAroundPlayer
   m_EditorClassIdentifier: 
-  prefab: {fileID: 8570068880541469392, guid: f199282be24931b40a1b87184fcbe48d, type: 3}
+  prefab: {fileID: 3573322475274897124, guid: 2c96d4509d8602e42b14b533a28e98c1, type: 3}
   initialDelay: 0
-  objectSize: {x: 1, y: 1, z: 1}
+  objectSize: {x: 0.5, y: 0.5, z: 0.8}
   coneAngle: 360
   isTargettingPlayer: 0
-  spawnRate: 1
+  spawnRate: 2
   bulletCount: 8
-  spawnRadius: 6
+  spawnRadius: 8
   direction: 0
+  randomDirection: 0
   directionChange: 0
   directionSwapCounter: 0
   repeatingCounter: 0
-  linearSpeed: -5
-  linearSpeedDelay: 1
+  linearSpeed: -10
+  linearSpeedDelay: 0.75
   angularSpeed: 0
   angularSpeedDelay: 0
   rotateAroundObject: 0
+  isLifetimeInfinite: 0
   abilityLifetime: 5
   abilityDecay: 8
   earlyDecay: 0
+  decayDelay: 0

@@ -10,16 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: aaa044fab9d610e42baf618c93960c66, type: 3}
-  m_Name: explosion
+  m_Name: LaserBlockade
   m_EditorClassIdentifier: 
-  prefab: {fileID: 6948847363818476012, guid: 5c8a2453f993ce340ab61bd4b5449fef, type: 3}
+  prefab: {fileID: 7835279901505979565, guid: b58ba40d17c3ac847966ea9d385e5678, type: 3}
   initialDelay: 0.8
-  objectSize: {x: 5, y: 5, z: 5}
-  coneAngle: 0
-  isTargettingPlayer: 0
-  spawnRate: 1
-  bulletCount: 1
-  spawnRadius: 0
+  objectSize: {x: 1, y: 1, z: 1}
+  coneAngle: 90
+  isTargettingPlayer: 1
+  spawnRate: 0
+  bulletCount: 2
+  spawnRadius: 1
   direction: 0
   randomDirection: 0
   directionChange: 0
@@ -31,7 +31,7 @@ MonoBehaviour:
   angularSpeedDelay: 0
   rotateAroundObject: 0
   isLifetimeInfinite: 0
-  abilityLifetime: 10
-  abilityDecay: 1
-  earlyDecay: 1
-  decayDelay: 1
+  abilityLifetime: 12
+  abilityDecay: 0
+  earlyDecay: 0
+  decayDelay: 0

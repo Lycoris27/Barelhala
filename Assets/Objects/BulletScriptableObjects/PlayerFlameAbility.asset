@@ -14,13 +14,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefab: {fileID: 8570068880541469392, guid: ab107d192a81b3f499647047e913858c, type: 3}
   initialDelay: 0
-  objectSize: {x: 1, y: 1, z: 1}
+  objectSize: {x: 3, y: 1, z: 3}
   coneAngle: 60
   isTargettingPlayer: 1
   spawnRate: 1
   bulletCount: 1
   spawnRadius: 0
   direction: 0
+  randomDirection: 0
   directionChange: 0
   directionSwapCounter: 0
   repeatingCounter: 0

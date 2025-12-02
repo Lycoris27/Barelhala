@@ -151,16 +151,19 @@ public class AttackScriptableObject : AbilityBaseScript
         {
             DestroyNextBullet(delay);
         });
+        
     }
 
     private void DestroyNextBullet(float delay)
     {
-        if (spawnedObjects.Count == 0 || active)
+        if (spawnedObjects.Count == 0 || (active && !earlyDecay))
             return;
 
         GameObject obj = spawnedObjects.Dequeue();
         if (obj != null)
             GameObject.Destroy(obj);
+
+        Debug.Log($"bullet destroyed");
 
         GlobalEvents.StartDelay(delay, () =>
         {
@@ -245,7 +248,8 @@ public class AttackScriptableObject : AbilityBaseScript
 
 
             // Repeat
-            GlobalEvents.StartDelay(1f / spawnRate, spawnLoop);
+            if(spawnRate != 0)
+                GlobalEvents.StartDelay(1f / spawnRate, spawnLoop);
         };
 
         spawnLoop.Invoke();

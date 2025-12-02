@@ -10,28 +10,28 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: aaa044fab9d610e42baf618c93960c66, type: 3}
-  m_Name: explosion
+  m_Name: LaserVolley
   m_EditorClassIdentifier: 
-  prefab: {fileID: 6948847363818476012, guid: 5c8a2453f993ce340ab61bd4b5449fef, type: 3}
-  initialDelay: 0.8
-  objectSize: {x: 5, y: 5, z: 5}
+  prefab: {fileID: 3573322475274897124, guid: 2c96d4509d8602e42b14b533a28e98c1, type: 3}
+  initialDelay: 0
+  objectSize: {x: 0.4, y: 0.4, z: 1}
   coneAngle: 0
-  isTargettingPlayer: 0
-  spawnRate: 1
+  isTargettingPlayer: 1
+  spawnRate: 10
   bulletCount: 1
-  spawnRadius: 0
+  spawnRadius: 0.5
   direction: 0
   randomDirection: 0
   directionChange: 0
   directionSwapCounter: 0
   repeatingCounter: 0
-  linearSpeed: 0
+  linearSpeed: 30
   linearSpeedDelay: 0
   angularSpeed: 0
   angularSpeedDelay: 0
   rotateAroundObject: 0
   isLifetimeInfinite: 0
-  abilityLifetime: 10
-  abilityDecay: 1
-  earlyDecay: 1
-  decayDelay: 1
+  abilityLifetime: 5
+  abilityDecay: 0
+  earlyDecay: 0
+  decayDelay: 0

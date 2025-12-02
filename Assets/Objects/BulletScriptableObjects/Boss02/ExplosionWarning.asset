@@ -17,10 +17,11 @@ MonoBehaviour:
   objectSize: {x: 3, y: 3, z: 3}
   coneAngle: 0
   isTargettingPlayer: 0
-  spawnRate: 0
+  spawnRate: 1
   bulletCount: 1
   spawnRadius: 0
   direction: 0
+  randomDirection: 0
   directionChange: 0
   directionSwapCounter: 0
   repeatingCounter: 0
@@ -30,7 +31,7 @@ MonoBehaviour:
   angularSpeedDelay: 0
   rotateAroundObject: 0
   isLifetimeInfinite: 0
-  abilityLifetime: 0.8
-  abilityDecay: 0
-  earlyDecay: 0
-  decayDelay: 0
+  abilityLifetime: 10
+  abilityDecay: 1
+  earlyDecay: 1
+  decayDelay: 1
