@@ -10,28 +10,28 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: aaa044fab9d610e42baf618c93960c66, type: 3}
-  m_Name: ConeBlast
+  m_Name: ChainExplosionWarning01
   m_EditorClassIdentifier: 
-  prefab: {fileID: 8570068880541469392, guid: f199282be24931b40a1b87184fcbe48d, type: 3}
+  prefab: {fileID: 8570068880541469392, guid: 6b4f8b660780bb14480d32502e61b17e, type: 3}
   initialDelay: 0
-  objectSize: {x: 1, y: 1, z: 1}
-  coneAngle: 60
-  isTargettingPlayer: 1
-  spawnRate: 1
-  bulletCount: 5
+  objectSize: {x: 8, y: 8, z: 8}
+  coneAngle: 360
+  isTargettingPlayer: 0
+  spawnRate: 0
+  bulletCount: 1
   spawnRadius: 0
   direction: 0
   randomDirection: 0
   directionChange: 0
   directionSwapCounter: 0
   repeatingCounter: 0
-  linearSpeed: 4
-  linearSpeedDelay: 0.95
+  linearSpeed: 0
+  linearSpeedDelay: 0
   angularSpeed: 0
   angularSpeedDelay: 0
   rotateAroundObject: 0
   isLifetimeInfinite: 0
-  abilityLifetime: 10
-  abilityDecay: 10
+  abilityLifetime: 0.5
+  abilityDecay: 0
   earlyDecay: 0
   decayDelay: 0

@@ -10,28 +10,28 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: aaa044fab9d610e42baf618c93960c66, type: 3}
-  m_Name: ConeBlast
+  m_Name: WaveAttack
   m_EditorClassIdentifier: 
   prefab: {fileID: 8570068880541469392, guid: f199282be24931b40a1b87184fcbe48d, type: 3}
   initialDelay: 0
   objectSize: {x: 1, y: 1, z: 1}
-  coneAngle: 60
+  coneAngle: 0
   isTargettingPlayer: 1
-  spawnRate: 1
-  bulletCount: 5
+  spawnRate: 15
+  bulletCount: 1
   spawnRadius: 0
   direction: 0
   randomDirection: 0
-  directionChange: 0
-  directionSwapCounter: 0
-  repeatingCounter: 0
-  linearSpeed: 4
-  linearSpeedDelay: 0.95
+  directionChange: 7
+  directionSwapCounter: 6
+  repeatingCounter: 1
+  linearSpeed: 20
+  linearSpeedDelay: 0
   angularSpeed: 0
   angularSpeedDelay: 0
   rotateAroundObject: 0
   isLifetimeInfinite: 0
-  abilityLifetime: 10
-  abilityDecay: 10
+  abilityLifetime: 4
+  abilityDecay: 4
   earlyDecay: 0
   decayDelay: 0

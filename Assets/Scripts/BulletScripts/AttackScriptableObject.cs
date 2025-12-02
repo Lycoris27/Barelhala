@@ -127,11 +127,14 @@ public class AttackScriptableObject : AbilityBaseScript
 
         GenerateBullets();
 
-        if (!isLifetimeInfinite)
-            GlobalEvents.StartDelay(Lifetime, EndAbility);
+        GlobalEvents.StartDelay(InitialDelay, () =>
+        {
+            if (!isLifetimeInfinite)
+                GlobalEvents.StartDelay(Lifetime, EndAbility);
 
-        if (earlyDecay)
-            CleanupBullets();
+            if (earlyDecay)
+                CleanupBullets();
+        });
     }
 
     // -----------------------------------------------------------

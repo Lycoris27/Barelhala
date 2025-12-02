@@ -5,17 +5,11 @@ using Action = Unity.Behavior.Action;
 using Unity.Properties;
 
 [Serializable, GeneratePropertyBag]
-[NodeDescription(
-    name: "Attack",
-    story: "[Agent] [attacks] [Target]",
-    category: "Action",
-    id: "f3b37987bc9971324f05980eafd5e3dc")]
+[NodeDescription(name: "Attack", story: "[Agent] [attacks] Target", category: "Action", id: "f3b37987bc9971324f05980eafd5e3dc")]
 public partial class AttackAction : Action
 {
     [SerializeReference] public BlackboardVariable<GameObject> Agent;
     [SerializeReference] public BlackboardVariable<AbilityBaseScript> Attacks;
-    [SerializeReference] public BlackboardVariable<GameObject> Target;
-
     protected override Status OnStart()
     {
         if (Agent?.Value == null)
@@ -31,8 +25,9 @@ public partial class AttackAction : Action
         }
 
         // Trigger the ability immediately
-        
-        Attacks.Value.ActivateAbility(Agent.Value);
+
+        var abilityInstance = ScriptableObject.Instantiate(Attacks.Value);
+        abilityInstance.ActivateAbility(Agent.Value);
 
         // Node is done, tree can progress
         return Status.Success;
