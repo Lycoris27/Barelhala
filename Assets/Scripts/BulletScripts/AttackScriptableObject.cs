@@ -207,6 +207,7 @@ public class AttackScriptableObject : AbilityBaseScript
                 ? (playerPos - selfRef.transform.position).normalized
                 : Quaternion.Euler(0f, direction, 0f) * Vector3.forward;
 
+            selfRef.transform.rotation = Quaternion.LookRotation(playerPos - selfRef.transform.position);
 
             for (int i = 0; i < SpawnCount; i++)
             {
