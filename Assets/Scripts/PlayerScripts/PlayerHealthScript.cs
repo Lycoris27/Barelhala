@@ -43,7 +43,7 @@ public class PlayerHealthScript : MonoBehaviour
             {
                 UpdateHealthUI();
                 StartCoroutine(ActivatePlayerImmunity());
-
+                /*
                 if(currentHealth == maxPlayerHealth - 1)
                 {
                     PlayerAbilityHolder holder = FindFirstObjectByType<PlayerAbilityHolder>();
@@ -56,6 +56,7 @@ public class PlayerHealthScript : MonoBehaviour
                     holder.ActivateAbility02.Invoke();
                     print("Bingus Tingus");
                 }
+                */
             }
             else if (currentHealth > maxPlayerHealth)
             {

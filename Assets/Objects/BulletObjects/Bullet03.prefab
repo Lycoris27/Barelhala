@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: -7245522727875629199}
   - component: {fileID: 4926313908144809305}
   m_Layer: 0
-  m_Name: Bullet
+  m_Name: Bullet03
   m_TagString: Bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -150,11 +150,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerCollision: 1
-  onPlayerCollideDelete: 1
+  onPlayerCollideDelete: 0
   onWallCollideDelete: 1
   onWallCollideBounce: 0
   bounceDampening: 1
   goonCollision: 0
   onGoonCollideDelete: 0
-  crateCollision: 1
-  onCrateCollideDelete: 1
+  crateCollision: 0
+  onCrateCollideDelete: 0

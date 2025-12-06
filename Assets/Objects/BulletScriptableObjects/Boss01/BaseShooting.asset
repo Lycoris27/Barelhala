@@ -10,20 +10,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: aaa044fab9d610e42baf618c93960c66, type: 3}
-  m_Name: SpinAttack01
+  m_Name: BaseShooting
   m_EditorClassIdentifier: 
   prefab: {fileID: 8570068880541469392, guid: f199282be24931b40a1b87184fcbe48d, type: 3}
   initialDelay: 0
   objectSize: {x: 1, y: 1, z: 1}
-  coneAngle: 0
-  isTargettingPlayer: 0
-  spawnRate: 40
+  coneAngle: 1
+  isTargettingPlayer: 1
+  spawnRate: 20
   bulletCount: 1
   spawnRadius: 0
   radiusChange: 0
   direction: 0
-  randomDirection: 0
-  directionChange: 23
+  randomDirection: 1
+  directionChange: 10
   directionSwapCounter: 0
   repeatingCounter: 0
   linearSpeed: 30
@@ -32,7 +32,7 @@ MonoBehaviour:
   angularSpeedDelay: 0
   rotateAroundObject: 0
   isLifetimeInfinite: 0
-  abilityLifetime: 10
-  abilityDecay: 10
+  abilityLifetime: 0.4
+  abilityDecay: 2
   earlyDecay: 0
   decayDelay: 0

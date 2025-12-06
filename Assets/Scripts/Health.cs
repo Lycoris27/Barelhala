@@ -17,6 +17,7 @@ public class Health: MonoBehaviour
     private void ReduceHealth()
     {
         healthCurrent--;
+        Debug.Log("burnt toast");
 
         if (healthCurrent <= 0)
         {

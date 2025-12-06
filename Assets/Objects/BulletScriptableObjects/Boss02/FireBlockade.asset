@@ -10,28 +10,29 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: aaa044fab9d610e42baf618c93960c66, type: 3}
-  m_Name: ConeBlast 1
+  m_Name: FireBlockade
   m_EditorClassIdentifier: 
-  prefab: {fileID: 8570068880541469392, guid: f199282be24931b40a1b87184fcbe48d, type: 3}
+  prefab: {fileID: 8570068880541469392, guid: 25664d544900bf54c9104a257e0eb8f4, type: 3}
   initialDelay: 0
-  objectSize: {x: 1, y: 1, z: 1}
+  objectSize: {x: 3, y: 0.1, z: 3}
   coneAngle: 360
-  isTargettingPlayer: 1
-  spawnRate: 4
-  bulletCount: 16
-  spawnRadius: 2
+  isTargettingPlayer: 0
+  spawnRate: 0
+  bulletCount: 35
+  spawnRadius: 10
+  radiusChange: 0
   direction: 0
   randomDirection: 0
-  directionChange: 3
+  directionChange: 0
   directionSwapCounter: 0
   repeatingCounter: 0
-  linearSpeed: 10
-  linearSpeedDelay: 0.25
+  linearSpeed: 0
+  linearSpeedDelay: 0
   angularSpeed: 0
   angularSpeedDelay: 0
   rotateAroundObject: 0
   isLifetimeInfinite: 0
-  abilityLifetime: 10
-  abilityDecay: 10
+  abilityLifetime: 4
+  abilityDecay: 0
   earlyDecay: 0
   decayDelay: 0

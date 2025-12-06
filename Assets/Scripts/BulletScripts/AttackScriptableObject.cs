@@ -48,6 +48,8 @@ public class AttackScriptableObject : AbilityBaseScript
     [SerializeField] private float spawnRadius = 0f; // new field
     public override float SpawnRadius => spawnRadius;
 
+    [SerializeField] private float radiusChange = 0f;
+
     [Header("Direction Variables - Only input if IsTargettingPlayer = False")]
 
     [Tooltip("When not targetting the player, determines the direction that the bullets are pointing at")]
@@ -113,6 +115,8 @@ public class AttackScriptableObject : AbilityBaseScript
     private GameObject selfRef;
 
     private int newDirectChange;
+
+
     
     
 
@@ -124,6 +128,9 @@ public class AttackScriptableObject : AbilityBaseScript
         if (selfRef == null) selfRef = SelfRef;
         if (playerRef == null) playerRef = GameObject.FindWithTag("Player");
         active = true;
+
+        //storedPlayerPos = playerRef.transform.position;
+        //storedSelfPos = selfRef.transform.position;
 
         GenerateBullets();
 
@@ -166,8 +173,6 @@ public class AttackScriptableObject : AbilityBaseScript
         if (obj != null)
             GameObject.Destroy(obj);
 
-        Debug.Log($"bullet destroyed");
-
         GlobalEvents.StartDelay(delay, () =>
         {
             DestroyNextBullet(delay);
@@ -180,10 +185,13 @@ public class AttackScriptableObject : AbilityBaseScript
     private void GenerateBullets()
     {
         float currentRotation = 0f;
+        float currentRadius = spawnRadius;
         float halfConeAngle = coneAngle / 2f;
         bool flipRotation = false;
         int shotCounter = 0;
         bool firstCounterComplete = false;
+
+        Vector3 playerPos = playerRef.transform.position;
 
         Action spawnLoop = null;
         spawnLoop = () =>
@@ -196,7 +204,7 @@ public class AttackScriptableObject : AbilityBaseScript
 
 
             Vector3 coneForward = (IsTargettingPlayer && playerRef != null)
-                ? (playerRef.transform.position - selfRef.transform.position).normalized
+                ? (playerPos - selfRef.transform.position).normalized
                 : Quaternion.Euler(0f, direction, 0f) * Vector3.forward;
 
 
@@ -208,7 +216,7 @@ public class AttackScriptableObject : AbilityBaseScript
                 Vector3 bulletDirection = Quaternion.Euler(0f, angle, 0f) * coneForward;
                 bulletDirection.Normalize();
 
-                Vector3 spawnPos = selfRef.transform.position + bulletDirection * SpawnRadius;
+                Vector3 spawnPos = selfRef.transform.position + bulletDirection * currentRadius;
                 Quaternion bulletRotation = Quaternion.LookRotation(bulletDirection, Vector3.up);
 
                 GlobalEvents.StartDelay(InitialDelay, () =>
@@ -229,6 +237,7 @@ public class AttackScriptableObject : AbilityBaseScript
 
             // Rotation pattern logic
             shotCounter++;
+            Debug.Log(shotCounter);
             if (shotCounter == DirectionSwapCounter && !firstCounterComplete)
             {
                 flipRotation = !flipRotation;
@@ -248,7 +257,7 @@ public class AttackScriptableObject : AbilityBaseScript
                 newDirectChange = UnityEngine.Random.Range(-DirectionChange, DirectionChange);
                 currentRotation = newDirectChange;
             }
-
+            currentRadius += radiusChange;
 
             // Repeat
             if(spawnRate != 0)

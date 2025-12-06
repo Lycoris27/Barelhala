@@ -20,6 +20,7 @@ MonoBehaviour:
   spawnRate: 0
   bulletCount: 2
   spawnRadius: 1
+  radiusChange: 0
   direction: 0
   randomDirection: 0
   directionChange: 0
@@ -31,7 +32,7 @@ MonoBehaviour:
   angularSpeedDelay: 0
   rotateAroundObject: 0
   isLifetimeInfinite: 0
-  abilityLifetime: 12
+  abilityLifetime: 7
   abilityDecay: 0
   earlyDecay: 0
   decayDelay: 0

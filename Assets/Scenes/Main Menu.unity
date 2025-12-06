@@ -5378,7 +5378,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxPlayerHealth: 5
   currentHealth: 0
-  delayBeforeCanDamage: 1
+  delayBeforeCanDamage: 0.75
   canTakeDamage: 1
 --- !u!114 &7929274583292825995
 MonoBehaviour:

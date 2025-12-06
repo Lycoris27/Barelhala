@@ -10,29 +10,29 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: aaa044fab9d610e42baf618c93960c66, type: 3}
-  m_Name: SpinAttack01
+  m_Name: ExplosionLineWarning01
   m_EditorClassIdentifier: 
-  prefab: {fileID: 8570068880541469392, guid: f199282be24931b40a1b87184fcbe48d, type: 3}
+  prefab: {fileID: 8570068880541469392, guid: 6b4f8b660780bb14480d32502e61b17e, type: 3}
   initialDelay: 0
-  objectSize: {x: 1, y: 1, z: 1}
+  objectSize: {x: 3, y: 3, z: 3}
   coneAngle: 0
   isTargettingPlayer: 0
-  spawnRate: 40
+  spawnRate: 15
   bulletCount: 1
-  spawnRadius: 0
-  radiusChange: 0
+  spawnRadius: 10
+  radiusChange: -2
   direction: 0
   randomDirection: 0
-  directionChange: 23
+  directionChange: 0
   directionSwapCounter: 0
   repeatingCounter: 0
-  linearSpeed: 30
+  linearSpeed: 0
   linearSpeedDelay: 0
   angularSpeed: 0
   angularSpeedDelay: 0
   rotateAroundObject: 0
   isLifetimeInfinite: 0
-  abilityLifetime: 10
-  abilityDecay: 10
+  abilityLifetime: 0.5
+  abilityDecay: 20
   earlyDecay: 0
   decayDelay: 0

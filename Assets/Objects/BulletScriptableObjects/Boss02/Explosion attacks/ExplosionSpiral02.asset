@@ -10,29 +10,29 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: aaa044fab9d610e42baf618c93960c66, type: 3}
-  m_Name: SpinAttack01
+  m_Name: ExplosionSpiral02
   m_EditorClassIdentifier: 
-  prefab: {fileID: 8570068880541469392, guid: f199282be24931b40a1b87184fcbe48d, type: 3}
-  initialDelay: 0
-  objectSize: {x: 1, y: 1, z: 1}
+  prefab: {fileID: 6948847363818476012, guid: 5c8a2453f993ce340ab61bd4b5449fef, type: 3}
+  initialDelay: 1.4
+  objectSize: {x: 5, y: 5, z: 5}
   coneAngle: 0
   isTargettingPlayer: 0
-  spawnRate: 40
+  spawnRate: 10
   bulletCount: 1
-  spawnRadius: 0
-  radiusChange: 0
-  direction: 0
+  spawnRadius: 20
+  radiusChange: -1
+  direction: -90
   randomDirection: 0
-  directionChange: 23
-  directionSwapCounter: 0
+  directionChange: 15
+  directionSwapCounter: 20
   repeatingCounter: 0
-  linearSpeed: 30
+  linearSpeed: 0
   linearSpeedDelay: 0
   angularSpeed: 0
   angularSpeedDelay: 0
   rotateAroundObject: 0
   isLifetimeInfinite: 0
-  abilityLifetime: 10
-  abilityDecay: 10
-  earlyDecay: 0
-  decayDelay: 0
+  abilityLifetime: 2.6
+  abilityDecay: 5
+  earlyDecay: 1
+  decayDelay: 1
