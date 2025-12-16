@@ -34,8 +34,8 @@ ModelImporter:
       name: Armature.002|mixamo.com.003
       takeName: Armature.002|mixamo.com.003
       internalID: 4948837080847882310
-      firstFrame: 0
-      lastFrame: 96
+      firstFrame: 30
+      lastFrame: 90
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
