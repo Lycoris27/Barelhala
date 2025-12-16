@@ -7,6 +7,7 @@ public class PlayerInputManagerScript : MonoBehaviour
     private InputSystem inputSystem;
     public static event System.Action<Vector2> OnMovePerformed;
     public static event System.Action OnInteractPerformed;
+    public static event System.Action<bool> onWalkingPerformed;
     private Vector2 moveInput;
 
     private void Awake()
@@ -36,10 +37,12 @@ public class PlayerInputManagerScript : MonoBehaviour
     public void OnMove(InputAction.CallbackContext context)
     {
         moveInput = context.ReadValue<Vector2>();
+        onWalkingPerformed?.Invoke(true);
     }
     public void StopMove(InputAction.CallbackContext context)
     {
         moveInput = context.ReadValue<Vector2>();
+        onWalkingPerformed?.Invoke(false);
     }
     public void OnInteract(InputAction.CallbackContext context)
     {

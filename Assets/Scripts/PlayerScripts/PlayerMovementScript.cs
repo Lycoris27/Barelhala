@@ -25,6 +25,15 @@ public class PlayerMovementScript : MonoBehaviour
 
     private void PlayerMove(Vector2 moveVal)
     {
-        rb.linearVelocity = new Vector3(-moveVal.y, 0, moveVal.x) * speed;
+        //rb.linearVelocity = new Vector3(-moveVal.y, 0, moveVal.x) * speed;
+
+        Vector3 moveDir = new Vector3(-moveVal.y, 0f, moveVal.x);
+
+        rb.linearVelocity = moveDir * speed;
+
+        if (moveDir.sqrMagnitude > 0.001f)
+        {
+            transform.rotation = Quaternion.LookRotation(moveDir, Vector3.up);
+        }
     }
 }

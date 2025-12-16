@@ -231,4 +231,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9c6fd3a81a964d24a8cde55b56b57c5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  verticalChange: 0.2
+  verticalChange: 0.4

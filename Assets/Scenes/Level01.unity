@@ -2750,6 +2750,11 @@ PrefabInstance:
       value: 10000
       objectReference: {fileID: 0}
     - target: {fileID: 1949025938671393357, guid: 5b71b7878e942034190e05795161e030, type: 3}
+      propertyPath: 'managedReferences[8460828060730524233]'
+      value: 'Unity.Behavior Unity.Behavior.BlackboardVariable`1[[BossAnimScript,
+        Assembly-CSharp]]'
+      objectReference: {fileID: 0}
+    - target: {fileID: 1949025938671393357, guid: 5b71b7878e942034190e05795161e030, type: 3}
       propertyPath: 'managedReferences[8579470059701273000]'
       value: 'Unity.Behavior Unity.Behavior.BlackboardVariable`1[[UnityEngine.GameObject,
         UnityEngine.CoreModule]]'
@@ -2785,6 +2790,10 @@ PrefabInstance:
         UnityEngine.CoreModule]]'
       objectReference: {fileID: 0}
     - target: {fileID: 1949025938671393357, guid: 5b71b7878e942034190e05795161e030, type: 3}
+      propertyPath: managedReferences[8460828060730524233].Name
+      value: BossAnimScript
+      objectReference: {fileID: 0}
+    - target: {fileID: 1949025938671393357, guid: 5b71b7878e942034190e05795161e030, type: 3}
       propertyPath: managedReferences[8579470059701273000].Name
       value: Target
       objectReference: {fileID: 0}
@@ -2814,8 +2823,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1949025938671393357, guid: 5b71b7878e942034190e05795161e030, type: 3}
       propertyPath: m_BlackboardVariableOverridesList.Array.size
-      value: 8
+      value: 9
       objectReference: {fileID: 0}
+    - target: {fileID: 1949025938671393357, guid: 5b71b7878e942034190e05795161e030, type: 3}
+      propertyPath: managedReferences[8460828060730524233].m_Value
+      value: 
+      objectReference: {fileID: 608637589}
     - target: {fileID: 1949025938671393357, guid: 5b71b7878e942034190e05795161e030, type: 3}
       propertyPath: managedReferences[8579470059701273000].m_Value
       value: 
@@ -2871,6 +2884,18 @@ PrefabInstance:
     - target: {fileID: 1949025938671393357, guid: 5b71b7878e942034190e05795161e030, type: 3}
       propertyPath: 'm_BlackboardVariableOverridesList.Array.data[7]'
       value: 8579470059701273006
+      objectReference: {fileID: 0}
+    - target: {fileID: 1949025938671393357, guid: 5b71b7878e942034190e05795161e030, type: 3}
+      propertyPath: 'm_BlackboardVariableOverridesList.Array.data[8]'
+      value: 8460828060730524233
+      objectReference: {fileID: 0}
+    - target: {fileID: 1949025938671393357, guid: 5b71b7878e942034190e05795161e030, type: 3}
+      propertyPath: managedReferences[8460828060730524233].GUID.m_Value0
+      value: 1062764014928566163
+      objectReference: {fileID: 0}
+    - target: {fileID: 1949025938671393357, guid: 5b71b7878e942034190e05795161e030, type: 3}
+      propertyPath: managedReferences[8460828060730524233].GUID.m_Value1
+      value: 15509980501314660630
       objectReference: {fileID: 0}
     - target: {fileID: 1949025938671393357, guid: 5b71b7878e942034190e05795161e030, type: 3}
       propertyPath: managedReferences[8579470059701273000].GUID.m_Value0
@@ -2986,6 +3011,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8259870124814426955, guid: 5b71b7878e942034190e05795161e030, type: 3}
   m_PrefabInstance: {fileID: 608637587}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &608637589 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8286569529131321353, guid: 5b71b7878e942034190e05795161e030, type: 3}
+  m_PrefabInstance: {fileID: 608637587}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05aa6256c647a294daebab141e14c3de, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &640550844 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -6706640830242361411, guid: 629a4ec1f0363f244aaee505f39cf978, type: 3}
@@ -8808,6 +8844,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5342228488289794748, guid: c623f4b4c66efdf4eb60235e9e8ad888, type: 3}
       propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5342228488289794748, guid: c623f4b4c66efdf4eb60235e9e8ad888, type: 3}
+      propertyPath: m_ProvidesContacts
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9202104472948209447, guid: c623f4b4c66efdf4eb60235e9e8ad888, type: 3}

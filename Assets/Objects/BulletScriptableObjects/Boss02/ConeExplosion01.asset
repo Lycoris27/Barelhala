@@ -13,10 +13,11 @@ MonoBehaviour:
   m_Name: ConeExplosion01
   m_EditorClassIdentifier: 
   prefab: {fileID: 6948847363818476012, guid: 5c8a2453f993ce340ab61bd4b5449fef, type: 3}
-  initialDelay: 0
+  initialDelay: 0.5
   objectSize: {x: 3, y: 3, z: 3}
   coneAngle: 90
   isTargettingPlayer: 1
+  isTargettingLastLocation: 1
   spawnRate: 10
   bulletCount: 7
   spawnRadius: 4

@@ -1,6 +1,7 @@
 using UnityEngine;
 using System.Collections.Generic;
 using System;
+using UnityEngine.SceneManagement;
 
 public class InteractibleManagerScript : MonoBehaviour
 {
@@ -15,7 +16,8 @@ public class InteractibleManagerScript : MonoBehaviour
         ObjectInteractionScript.OnPlayerEnterZone += AddObject;
         ObjectInteractionScript.OnPlayerExitZone += RemoveObject;
         LevelManagerScript.OnResetLevel += ResetScript;
-        
+        SceneManager.sceneLoaded += OnSceneLoaded;
+
 
     }
     private void OnDisable()
@@ -24,6 +26,7 @@ public class InteractibleManagerScript : MonoBehaviour
         ObjectInteractionScript.OnPlayerEnterZone -= AddObject;
         ObjectInteractionScript.OnPlayerExitZone -= RemoveObject;
         LevelManagerScript.OnResetLevel -= ResetScript;
+        SceneManager.sceneLoaded -= OnSceneLoaded;
     }
 
     private void Interact()
@@ -61,5 +64,10 @@ public class InteractibleManagerScript : MonoBehaviour
     private void ResetScript()
     {
         interactiblesCollected = 0;
+        isNearDoor = false;
+    }
+    private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        ResetScript();
     }
 }

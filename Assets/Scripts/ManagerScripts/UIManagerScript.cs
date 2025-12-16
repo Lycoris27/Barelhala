@@ -2,6 +2,7 @@ using UnityEngine;
 using System.Collections.Generic;
 using UnityEngine.Events;
 using UnityEngine.EventSystems;
+using UnityEngine.SceneManagement;
 
 public class UIManagerScript : MonoBehaviour
 {
@@ -42,6 +43,17 @@ public class UIManagerScript : MonoBehaviour
             else {obj.SetActive(false);}
         }
     }
+    public static void CheckSceneforUILoad(int UINumber)
+    {
+        Scene currentScene = SceneManager.GetActiveScene();
+        if (currentScene.buildIndex == 0)
+            EngageUI(0);
+        else
+            EngageUI(2);
+
+    }
+
+
     public void SetFirstSelected(GameObject obj)
     {
         eventSystem.firstSelectedGameObject = obj;

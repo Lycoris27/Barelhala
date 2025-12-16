@@ -32,6 +32,7 @@ public class AttackScriptableObject : AbilityBaseScript
     [SerializeField] private bool isTargettingPlayer; // might be desired later
     public override bool IsTargettingPlayer => isTargettingPlayer;
 
+    [SerializeField] private bool isTargettingLastLocation = false;
 
 
     [Header("Spawning Variables")]
@@ -202,6 +203,7 @@ public class AttackScriptableObject : AbilityBaseScript
             // Track bullets spawned *only this cycle*
             List<GameObject> newlySpawned = new List<GameObject>();
 
+            if (!isTargettingLastLocation) playerPos = playerRef.transform.position; 
 
             Vector3 coneForward = (IsTargettingPlayer && playerRef != null)
                 ? (playerPos - selfRef.transform.position).normalized
