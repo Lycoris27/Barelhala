@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}",
     "Language": "SFX",
-    "Hash": "{E8C73C05-9AC5-A17E-EA11-491BBCB2A45E}",
+    "Hash": "{4CFDCEA0-0FB0-79EA-985B-C9AC6077E2CD}",
     "ObjectPath": "Init",
     "ShortName": "Init",
     "Path": "Init.bnk",
@@ -36,6 +36,62 @@
     },
     "Busses": [
      {
+      "Id": "393239870",
+      "Name": "SFX",
+      "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\SFX",
+      "GUID": "{C6831EFF-FB99-4A33-9D59-EC42B7C0A785}",
+      "Color": "10"
+     },
+     {
+      "Id": "436743010",
+      "Name": "Character",
+      "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Character",
+      "GUID": "{1E79B88E-BCDA-4DB3-9093-67437387973D}",
+      "Color": "4"
+     },
+     {
+      "Id": "1520494568",
+      "Name": "Guns & Ammo",
+      "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Guns & Ammo",
+      "GUID": "{6E25F440-ABEA-4934-8E8D-62F69CC008E2}",
+      "Color": "2"
+     },
+     {
+      "Id": "1551306167",
+      "Name": "UI",
+      "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\UI",
+      "GUID": "{A5A6B61E-3151-48A6-93F2-7549E57FF470}",
+      "Color": "6"
+     },
+     {
+      "Id": "1685527054",
+      "Name": "MX",
+      "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\MX",
+      "GUID": "{ECDFBD89-0C46-42D2-BA16-D2CC82D77C00}",
+      "Color": "11"
+     },
+     {
+      "Id": "1761501016",
+      "Name": "Boom",
+      "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Boom",
+      "GUID": "{A9EAA851-6260-43DA-BC20-930A96362D2A}",
+      "Color": "10"
+     },
+     {
+      "Id": "2242381963",
+      "Name": "Enemies",
+      "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Enemies",
+      "GUID": "{6A8C42DF-8797-4E04-AB85-8B52188D4879}",
+      "Color": "2"
+     },
+     {
+      "Id": "2764240573",
+      "Name": "Combat",
+      "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Combat",
+      "GUID": "{C87E5B43-F5D9-4ABB-A5F8-4148486FFBCF}",
+      "Color": "3"
+     },
+     {
       "Id": "3803692087",
       "Name": "Master Audio Bus",
       "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus",
@@ -44,6 +100,6 @@
     ]
    }
   ],
-  "FileHash": "{C6EB928A-01F8-D331-B6CB-27AE57D90F70}"
+  "FileHash": "{926FE2A0-3DFF-7A1A-83A8-F22B65DB84A7}"
  }
 }

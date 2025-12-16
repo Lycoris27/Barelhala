@@ -1,6 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{B6672BE9-9B4D-4DFA-A19F-5D4A85B6D564}" SchemaVersion="123">
 	<MixingSessions>
-		<WorkUnit Name="Default Work Unit" ID="{B6672BE9-9B4D-4DFA-A19F-5D4A85B6D564}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{B6672BE9-9B4D-4DFA-A19F-5D4A85B6D564}" PersistMode="Standalone">
+			<ChildrenList>
+				<MixingSession Name="Test Mix v1" ID="{2145679D-79C0-4DBC-BD0A-7476E154B1BB}">
+					<ObjectList>
+						<ObjectRef Name="Beam Rife - L" ID="{EA0B75E3-62EA-47EF-9DD1-9A9C7FA81E1E}" WorkUnitID="{D7AAD56C-1B10-45D0-B221-3519EA9A271F}"/>
+						<ObjectRef Name="Beam Rife - L_01" ID="{8BFA0ED4-3A16-4D77-8438-562BD78D9745}" WorkUnitID="{D7AAD56C-1B10-45D0-B221-3519EA9A271F}"/>
+						<ObjectRef Name="Laser  Gun - S" ID="{38D4CAAE-4FF9-4F8E-AC8B-8FB4663185C5}" WorkUnitID="{D7AAD56C-1B10-45D0-B221-3519EA9A271F}"/>
+						<ObjectRef Name="SciFi Gun - L" ID="{B6B00544-136D-49B4-A578-40CACDFC0675}" WorkUnitID="{D7AAD56C-1B10-45D0-B221-3519EA9A271F}"/>
+						<ObjectRef Name="Scifi Gun - S" ID="{C8011F60-D776-4615-B34C-368DB3DB7413}" WorkUnitID="{D7AAD56C-1B10-45D0-B221-3519EA9A271F}"/>
+						<ObjectRef Name="Scifi Gun - S_01" ID="{4E9E4B26-2A61-4BB2-833B-226ACA0296BB}" WorkUnitID="{D7AAD56C-1B10-45D0-B221-3519EA9A271F}"/>
+						<ObjectRef Name="Scifi Gun - S_02" ID="{73074857-74B5-4361-9FF1-0E97ED80E579}" WorkUnitID="{D7AAD56C-1B10-45D0-B221-3519EA9A271F}"/>
+						<ObjectRef Name="BEAM GUN" ID="{2034DF7E-35E4-4483-B804-94410C1FFF67}" WorkUnitID="{D7AAD56C-1B10-45D0-B221-3519EA9A271F}"/>
+						<ObjectRef Name="BEAM GUN - TAIL" ID="{233B8B2A-6DDC-406A-B803-87411A4A50D9}" WorkUnitID="{D7AAD56C-1B10-45D0-B221-3519EA9A271F}"/>
+					</ObjectList>
+				</MixingSession>
+			</ChildrenList>
+		</WorkUnit>
 	</MixingSessions>
 </WwiseDocument>

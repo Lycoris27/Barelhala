@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{E3D7C2A7-8136-4779-AA12-703B5CC44C86}",
     "Language": "English(US)",
-    "Hash": "{0D0FC550-ED03-AD6E-4350-B7FF76F029F3}",
+    "Hash": "{26F84C35-8775-A1DB-5A2D-AA91134ACD7C}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Main",
     "ShortName": "Main",
     "Path": "English(US)/Main.bnk",
@@ -28,8 +28,9 @@
      {
       "Id": "251043389",
       "Name": "Play_Song",
-      "ObjectPath": "\\Events\\Default Work Unit\\Play_Song",
+      "ObjectPath": "\\Events\\Default Work Unit\\Music\\Play_Song",
       "GUID": "{3581FAEF-5B5F-4ED5-A838-AB154F40A8F9}",
+      "Color": "12",
       "DurationType": "OneShot",
       "DurationMin": "247.31573",
       "DurationMax": "247.31573",
@@ -42,8 +43,9 @@
      {
       "Id": "2820223978",
       "Name": "Play_This",
-      "ObjectPath": "\\Events\\Default Work Unit\\Play_This",
+      "ObjectPath": "\\Events\\Default Work Unit\\Music\\Play_This",
       "GUID": "{F2111D6E-A013-4B92-93FB-9024AAE19CB8}",
+      "Color": "12",
       "DurationType": "OneShot",
       "DurationMin": "247.31573",
       "DurationMax": "247.31573",
@@ -56,6 +58,6 @@
     ]
    }
   ],
-  "FileHash": "{227FE039-7F71-5954-4C19-1A08523B58A8}"
+  "FileHash": "{C2393FE1-1E9C-85FF-4345-78571503215E}"
  }
 }

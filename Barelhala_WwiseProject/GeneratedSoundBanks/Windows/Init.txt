@@ -1,4 +1,12 @@
 Audio Bus	ID	Name			Wwise Object Path	Notes
+	393239870	SFX			\Default Work Unit\Master Audio Bus\SFX	
+	436743010	Character			\Default Work Unit\Master Audio Bus\Character	
+	1520494568	Guns & Ammo			\Default Work Unit\Master Audio Bus\Guns & Ammo	
+	1551306167	UI			\Default Work Unit\Master Audio Bus\UI	
+	1685527054	MX			\Default Work Unit\Master Audio Bus\MX	
+	1761501016	Boom			\Default Work Unit\Master Audio Bus\Boom	
+	2242381963	Enemies			\Default Work Unit\Master Audio Bus\Enemies	
+	2764240573	Combat			\Default Work Unit\Master Audio Bus\Combat	
 	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
 
 Audio Devices	ID	Name	Type				Notes

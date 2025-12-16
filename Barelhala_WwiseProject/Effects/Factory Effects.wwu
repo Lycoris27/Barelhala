@@ -45,9 +45,10 @@
 						<Effect Name="High_Impact" ID="{2AFD6FB0-C906-4683-A377-FEEEF72967B0}" PluginName="Wwise Compressor" CompanyID="0" PluginID="108" PluginType="3">
 							<PropertyList>
 								<Property Name="AttackTime" Type="Real32" Value="0.04"/>
+								<Property Name="OutputGain" Type="Real32" Value="3"/>
 								<Property Name="Ratio" Type="Real32" Value="12"/>
 								<Property Name="ReleaseTime" Type="Real32" Value="0.5"/>
-								<Property Name="Threshold" Type="Real32" Value="-6"/>
+								<Property Name="Threshold" Type="Real32" Value="-29.6"/>
 							</PropertyList>
 						</Effect>
 						<Effect Name="Attack_Remover" ID="{174E7B9A-A16F-4CA7-86D0-530212B5A6AA}" PluginName="Wwise Compressor" CompanyID="0" PluginID="108" PluginType="3">
@@ -501,6 +502,7 @@
 												<Property Name="GainBand1" Type="Real32" Value="6"/>
 												<Property Name="GainBand3" Type="Real32" Value="12"/>
 												<Property Name="OnOffBand2" Type="bool" Value="False"/>
+												<Property Name="OutputLevel" Type="Real32" Value="-5"/>
 											</PropertyList>
 										</Effect>
 										<Effect Name="Club_Music_Distant_01" ID="{972799F5-C6E5-4E4F-83E3-95AA307CDFD1}" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
@@ -586,7 +588,7 @@
 								<Effect Name="High_Pass_60Hz" ID="{F9627628-0B10-4272-BC30-D4C20423CB38}" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
 									<PropertyList>
 										<Property Name="FilterTypeBand1" Type="int32" Value="1"/>
-										<Property Name="FrequencyBand1" Type="Real32" Value="60"/>
+										<Property Name="FrequencyBand1" Type="Real32" Value="48"/>
 										<Property Name="OnOffBand2" Type="bool" Value="False"/>
 										<Property Name="OnOffBand3" Type="bool" Value="False"/>
 									</PropertyList>
@@ -680,27 +682,30 @@
 					<ChildrenList>
 						<Effect Name="Bathroom1" ID="{1969D30F-C165-45C0-B290-DE3ED07A7AA3}" PluginName="Wwise Matrix Reverb" CompanyID="0" PluginID="115" PluginType="3">
 							<PropertyList>
+								<Property Name="DryLevel" Type="Real32" Value="-2.3"/>
 								<Property Name="HFRatio" Type="Real32" Value="4.5"/>
 								<Property Name="NumberOfDelays" Type="int32" Value="12"/>
 								<Property Name="ReverbTime" Type="Real32" Value="1"/>
-								<Property Name="WetLevel" Type="Real32" Value="-20"/>
+								<Property Name="WetLevel" Type="Real32" Value="-26"/>
 							</PropertyList>
 						</Effect>
 						<Effect Name="Big_Garage1" ID="{172402A8-22F4-40FC-BE1D-5269594CB633}" PluginName="Wwise Matrix Reverb" CompanyID="0" PluginID="115" PluginType="3">
 							<PropertyList>
+								<Property Name="DryLevel" Type="Real32" Value="-0.3"/>
 								<Property Name="HFRatio" Type="Real32" Value="3"/>
 								<Property Name="NumberOfDelays" Type="int32" Value="12"/>
-								<Property Name="ReverbTime" Type="Real32" Value="2"/>
-								<Property Name="WetLevel" Type="Real32" Value="-30"/>
+								<Property Name="ReverbTime" Type="Real32" Value="1.7"/>
+								<Property Name="WetLevel" Type="Real32" Value="-43"/>
 							</PropertyList>
 						</Effect>
 						<Effect Name="Large_Bright_Chamber1" ID="{0BFA2291-5716-4759-AC24-F59D29E8F2E4}" PluginName="Wwise Matrix Reverb" CompanyID="0" PluginID="115" PluginType="3">
 							<PropertyList>
+								<Property Name="DryLevel" Type="Real32" Value="-11.3"/>
 								<Property Name="HFRatio" Type="Real32" Value="1"/>
 								<Property Name="NumberOfDelays" Type="int32" Value="12"/>
 								<Property Name="PreDelay" Type="Real32" Value="0.05"/>
 								<Property Name="ReverbTime" Type="Real32" Value="2"/>
-								<Property Name="WetLevel" Type="Real32" Value="-30"/>
+								<Property Name="WetLevel" Type="Real32" Value="-40"/>
 							</PropertyList>
 						</Effect>
 						<Effect Name="Large_Church1" ID="{9B6E8B78-EF8C-494C-AADA-D01CF51B5FAC}" PluginName="Wwise Matrix Reverb" CompanyID="0" PluginID="115" PluginType="3">
@@ -730,6 +735,7 @@
 						</Effect>
 						<Effect Name="Small_Tiled_Room1" ID="{41EEE722-3009-4B3F-8820-F414623783E3}" PluginName="Wwise Matrix Reverb" CompanyID="0" PluginID="115" PluginType="3">
 							<PropertyList>
+								<Property Name="DryLevel" Type="Real32" Value="-3.3"/>
 								<Property Name="HFRatio" Type="Real32" Value="8"/>
 								<Property Name="NumberOfDelays" Type="int32" Value="12"/>
 								<Property Name="ReverbTime" Type="Real32" Value="1.5"/>
@@ -1588,9 +1594,11 @@
 								<Effect Name="Chorus_Like" ID="{EEE0CC86-8CA5-4DBC-A6B7-568FCB26F290}" PluginName="Wwise Flanger" CompanyID="0" PluginID="125" PluginType="3">
 									<PropertyList>
 										<Property Name="DelayTime" Type="Real32" Value="10"/>
-										<Property Name="ModDepth" Type="Real32" Value="60"/>
+										<Property Name="FeedBackLevel" Type="Real32" Value="0.1"/>
+										<Property Name="ModDepth" Type="Real32" Value="20.4"/>
 										<Property Name="ModFrequency" Type="Real32" Value="0.85"/>
 										<Property Name="ModPWM" Type="Real32" Value="0"/>
+										<Property Name="WetDryMix" Type="Real32" Value="20"/>
 									</PropertyList>
 								</Effect>
 							</ChildrenList>
@@ -1734,10 +1742,13 @@
 					<ChildrenList>
 						<Effect Name="_1_Frame_Delay" ID="{B8CCC284-212D-4ADF-B8E4-BC724B40D8BD}" PluginName="Wwise Stereo Delay" CompanyID="0" PluginID="135" PluginType="3">
 							<PropertyList>
+								<Property Name="EnableFeedback" Type="bool" Value="True"/>
 								<Property Name="FilterFrequency" Type="Real32" Value="261"/>
 								<Property Name="FilterGain" Type="Real32" Value="10.5"/>
 								<Property Name="LeftDelayTime" Type="Real32" Value="0.03"/>
+								<Property Name="LeftFeedback" Type="Real32" Value="-14.8"/>
 								<Property Name="RightDelayTime" Type="Real32" Value="0.03"/>
+								<Property Name="WetLevel" Type="Real32" Value="4"/>
 							</PropertyList>
 						</Effect>
 						<Effect Name="_1_Second_Delay" ID="{5AAB81A5-3444-4DE7-AEB3-2DDBB33D455B}" PluginName="Wwise Stereo Delay" CompanyID="0" PluginID="135" PluginType="3">
@@ -1868,6 +1879,7 @@
 						</Effect>
 						<Effect Name="Rhythmic_Talk" ID="{F0F27454-4BCC-4302-A61D-C324E7187DD0}" PluginName="Wwise Tremolo" CompanyID="0" PluginID="131" PluginType="3">
 							<PropertyList>
+								<Property Name="ModDepth" Type="Real32" Value="66.7"/>
 								<Property Name="ModFrequency" Type="Real32" Value="15"/>
 								<Property Name="ModPWM" Type="Real32" Value="15"/>
 								<Property Name="ModPhaseOffset" Type="Real32" Value="-180"/>
@@ -1886,6 +1898,7 @@
 						</Effect>
 						<Effect Name="Boomerang" ID="{65397B72-19EC-43DB-B2D2-EB84437B6BDC}" PluginName="Wwise Tremolo" CompanyID="0" PluginID="131" PluginType="3">
 							<PropertyList>
+								<Property Name="ModDepth" Type="Real32" Value="65.6"/>
 								<Property Name="ModFrequency" Type="Real32" Value="3"/>
 								<Property Name="ModPWM" Type="Real32" Value="0"/>
 								<Property Name="ModPhaseOffset" Type="Real32" Value="-180"/>
@@ -1914,10 +1927,11 @@
 						</Effect>
 						<Effect Name="Aliasing" ID="{4CCC0D23-78CD-4B09-A62B-D3CB5E071A2F}" PluginName="Wwise Tremolo" CompanyID="0" PluginID="131" PluginType="3">
 							<PropertyList>
-								<Property Name="ModFrequency" Type="Real32" Value="20000"/>
-								<Property Name="ModPWM" Type="Real32" Value="0"/>
+								<Property Name="ModDepth" Type="Real32" Value="72.9"/>
+								<Property Name="ModFrequency" Type="Real32" Value="18.9"/>
+								<Property Name="ModPWM" Type="Real32" Value="46"/>
 								<Property Name="ModPhaseOffset" Type="Real32" Value="-180"/>
-								<Property Name="ModPhaseSpread" Type="Real32" Value="19"/>
+								<Property Name="ModPhaseSpread" Type="Real32" Value="139"/>
 								<Property Name="ModSmoothing" Type="Real32" Value="100"/>
 								<Property Name="ModWaveform" Type="int32" Value="4"/>
 							</PropertyList>
@@ -1949,14 +1963,15 @@
 							<ChildrenList>
 								<Effect Name="Octave_Up" ID="{A98F423C-EC97-49D8-8698-445CE91F24B7}" PluginName="Wwise Pitch Shifter" CompanyID="0" PluginID="136" PluginType="3">
 									<PropertyList>
+										<Property Name="DelayTime" Type="Real32" Value="29"/>
 										<Property Name="DryLevel" Type="Real32" Value="0"/>
-										<Property Name="Pitch" Type="Real32" Value="1200"/>
+										<Property Name="Pitch" Type="Real32" Value="-300"/>
 									</PropertyList>
 								</Effect>
 								<Effect Name="Octave_Down" ID="{062EC4B1-5372-4D1E-917B-C757293F2B42}" PluginName="Wwise Pitch Shifter" CompanyID="0" PluginID="136" PluginType="3">
 									<PropertyList>
 										<Property Name="DryLevel" Type="Real32" Value="0"/>
-										<Property Name="Pitch" Type="Real32" Value="-1200"/>
+										<Property Name="Pitch" Type="Real32" Value="-200"/>
 									</PropertyList>
 								</Effect>
 							</ChildrenList>
@@ -1970,8 +1985,10 @@
 								</Effect>
 								<Effect Name="Monsterize" ID="{99F80B38-1C45-42CE-9BCD-E94F3885DCAA}" PluginName="Wwise Pitch Shifter" CompanyID="0" PluginID="136" PluginType="3">
 									<PropertyList>
+										<Property Name="DryLevel" Type="Real32" Value="7"/>
 										<Property Name="FilterFrequency" Type="Real32" Value="2000"/>
-										<Property Name="Pitch" Type="Real32" Value="-1200"/>
+										<Property Name="Pitch" Type="Real32" Value="700"/>
+										<Property Name="WetLevel" Type="Real32" Value="-9"/>
 									</PropertyList>
 								</Effect>
 								<Effect Name="Voice_CenterOnly_Lowered" ID="{179558E7-E6DF-4021-9D38-A284DF53B7E5}" PluginName="Wwise Pitch Shifter" CompanyID="0" PluginID="136" PluginType="3">

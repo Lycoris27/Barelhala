@@ -1,6 +1,141 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{5C9BCCDF-B187-4614-A629-ACB50D5B6D5B}" SchemaVersion="123">
 	<SoundcasterSessions>
-		<WorkUnit Name="Default Work Unit" ID="{5C9BCCDF-B187-4614-A629-ACB50D5B6D5B}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{5C9BCCDF-B187-4614-A629-ACB50D5B6D5B}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundcasterSession Name="Barrels Sound Caster" ID="{A61F50DF-ADF5-4FBC-B866-DF835FB5E27C}">
+					<RTPCValueList ShowAll="true"/>
+					<CurrentStateList ShowAll="true"/>
+					<CurrentSwitchList ShowAll="true"/>
+				</SoundcasterSession>
+				<SoundcasterSession Name="BARRELS MAIN" ID="{5EC4F997-86FA-44E2-B5C5-E26C903381ED}">
+					<ModuleList>
+						<Module>
+							<ObjectRef Name="Play_MILI_Gun" ID="{918526E6-7678-412B-8B0D-124EC898F23B}" WorkUnitID="{55E2051E-819B-496F-B51C-CA68A2D516D4}"/>
+							<Position X="0" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Stop_MILI_Gun" ID="{D8F55635-25C6-4C28-8B17-1FC2C37608BF}" WorkUnitID="{55E2051E-819B-496F-B51C-CA68A2D516D4}"/>
+							<Position X="0" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_MILI_Pistol" ID="{FCDFEFE3-5AE1-4105-9FE5-9016F596E210}" WorkUnitID="{55E2051E-819B-496F-B51C-CA68A2D516D4}"/>
+							<Position X="0" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_MILI_Pistol_Reload" ID="{0A8084CE-BD6E-4608-AB9C-0EA61E61BB97}" WorkUnitID="{55E2051E-819B-496F-B51C-CA68A2D516D4}"/>
+							<Position X="0" Y="3"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_Bomb_LRG_1" ID="{F02B77D8-6C19-46B2-B6CD-229C5BE2E720}" WorkUnitID="{55E2051E-819B-496F-B51C-CA68A2D516D4}"/>
+							<Position X="0" Y="5"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_Bomb_SML_1" ID="{ED833C3C-CA7D-4605-9E56-AC6F98FCD1A8}" WorkUnitID="{55E2051E-819B-496F-B51C-CA68A2D516D4}"/>
+							<Position X="0" Y="6"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_Mach_Gun_SML" ID="{59460778-AE1F-4C59-B3B1-7A52B9C1B0C4}" WorkUnitID="{55E2051E-819B-496F-B51C-CA68A2D516D4}"/>
+							<Position X="1" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Stop_Mach_Gun_SML" ID="{781739E8-38E2-4829-8C74-FDD1A357FC1E}" WorkUnitID="{55E2051E-819B-496F-B51C-CA68A2D516D4}"/>
+							<Position X="1" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_Mach_Gun_LRG" ID="{F8D3E0BD-214C-4603-92DF-7743D8741F73}" WorkUnitID="{55E2051E-819B-496F-B51C-CA68A2D516D4}"/>
+							<Position X="1" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Stop_Mach_Gun_LRG" ID="{38A326DD-4257-4F1C-A936-5F0327873B6F}" WorkUnitID="{55E2051E-819B-496F-B51C-CA68A2D516D4}"/>
+							<Position X="1" Y="3"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_Bomb_LRG_2" ID="{F2007DFC-BA23-495D-9CB4-BF30C8ED2682}" WorkUnitID="{55E2051E-819B-496F-B51C-CA68A2D516D4}"/>
+							<Position X="1" Y="5"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_Bomb_SML_2" ID="{78754AD2-1ADB-464C-AE31-EDECE543254F}" WorkUnitID="{55E2051E-819B-496F-B51C-CA68A2D516D4}"/>
+							<Position X="1" Y="6"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_Beam_Rifle" ID="{BD141CAF-390C-4692-8F4C-F5C1339E5544}" WorkUnitID="{55E2051E-819B-496F-B51C-CA68A2D516D4}"/>
+							<Position X="2" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Stop_Beam_Rifle" ID="{13D2CF2E-8C60-49E3-B856-086C483AD430}" WorkUnitID="{55E2051E-819B-496F-B51C-CA68A2D516D4}"/>
+							<Position X="2" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_Phaser_Beam" ID="{734522B5-98EF-4053-B3FF-7099A98F46B6}" WorkUnitID="{55E2051E-819B-496F-B51C-CA68A2D516D4}"/>
+							<Position X="2" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Stop_Phaser_Beam" ID="{AA91EE27-949E-4853-84F8-E958CD53AB54}" WorkUnitID="{55E2051E-819B-496F-B51C-CA68A2D516D4}"/>
+							<Position X="2" Y="3"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_Bomb_LRG_3" ID="{019189D1-AA59-475A-80D2-0673C2F119ED}" WorkUnitID="{55E2051E-819B-496F-B51C-CA68A2D516D4}"/>
+							<Position X="2" Y="5"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_Bomb_SML_3" ID="{D4C7A825-EE8A-42D9-8B47-9CDD6E820BFF}" WorkUnitID="{55E2051E-819B-496F-B51C-CA68A2D516D4}"/>
+							<Position X="2" Y="6"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_Quick_Spell_1" ID="{9B5E7667-458A-451A-A821-C6406FF341A1}" WorkUnitID="{55E2051E-819B-496F-B51C-CA68A2D516D4}"/>
+							<Position X="4" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_Quick_Spell_2" ID="{C4E3649F-B053-4F16-8F49-68F0F82589DA}" WorkUnitID="{55E2051E-819B-496F-B51C-CA68A2D516D4}"/>
+							<Position X="4" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_LNG_Spell_1" ID="{DC294C94-1B54-40D3-8BEC-EFFFFCB86C61}" WorkUnitID="{55E2051E-819B-496F-B51C-CA68A2D516D4}"/>
+							<Position X="4" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_LNG_Spell_2" ID="{02CD494E-79FA-4ADC-AB19-FC35F2BAD4A0}" WorkUnitID="{55E2051E-819B-496F-B51C-CA68A2D516D4}"/>
+							<Position X="4" Y="3"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_Barrel_Hit_Grunt" ID="{6B7F66CE-833C-434B-9DCA-991BFC1C7060}" WorkUnitID="{55E2051E-819B-496F-B51C-CA68A2D516D4}"/>
+							<Position X="6" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Enemy_Hit" ID="{95951140-77F3-4A35-A8FB-C14340E37025}" WorkUnitID="{55E2051E-819B-496F-B51C-CA68A2D516D4}"/>
+							<Position X="6" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_UI_Navigation" ID="{6595F78E-E846-4BCA-8FAE-9A42712A3F62}" WorkUnitID="{55E2051E-819B-496F-B51C-CA68A2D516D4}"/>
+							<Position X="6" Y="5"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_UI_Error" ID="{D0032201-6C7D-45B0-8B8D-BECC1CC2A829}" WorkUnitID="{55E2051E-819B-496F-B51C-CA68A2D516D4}"/>
+							<Position X="6" Y="6"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_Barrel_Hit_NO_Grunt" ID="{5439C107-61A4-4DEA-8598-71538FFAF04B}" WorkUnitID="{55E2051E-819B-496F-B51C-CA68A2D516D4}"/>
+							<Position X="7" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_Barrel_FS" ID="{702BB111-D9DF-45E8-8757-5F0B8DA6A873}" WorkUnitID="{55E2051E-819B-496F-B51C-CA68A2D516D4}"/>
+							<Position X="7" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_UI_Confirm" ID="{344E5203-CCA2-4377-9883-449072823FF8}" WorkUnitID="{55E2051E-819B-496F-B51C-CA68A2D516D4}"/>
+							<Position X="7" Y="5"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_UI_Cancel" ID="{B3D615E9-8881-4202-A386-15A3CF8255A3}" WorkUnitID="{55E2051E-819B-496F-B51C-CA68A2D516D4}"/>
+							<Position X="7" Y="6"/>
+						</Module>
+					</ModuleList>
+					<RTPCValueList ShowAll="true"/>
+					<CurrentStateList ShowAll="true"/>
+					<CurrentSwitchList ShowAll="true"/>
+				</SoundcasterSession>
+			</ChildrenList>
+		</WorkUnit>
 	</SoundcasterSessions>
 </WwiseDocument>

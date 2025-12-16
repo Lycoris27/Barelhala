@@ -1,7 +1,7 @@
 Event	ID	Name			Wwise Object Path	Notes
-	251043389	Play_Song			\Default Work Unit\Play_Song	
-	2820223978	Play_This			\Default Work Unit\Play_This	
+	251043389	Play_Song			\Default Work Unit\Music\Play_Song	
+	2820223978	Play_This			\Default Work Unit\Music\Play_This	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	975214564	jam_project_-_believe_in_my_existence	C:\Users\frizf\Documents\GitHub\Barelhala\Barelhala_WwiseProject\.cache\3C\{3C40DC12-14CC-B73F-FDBB-A6F2B9AAB0C4}.wem		\Actor-Mixer Hierarchy\Default Work Unit\jam_project_-_believe_in_my_existence		43626592
+	975214564	jam_project_-_believe_in_my_existence	Y:\Developer\Barelhala\Barelhala_WwiseProject\.cache\3C\{3C40DC12-14CC-B73F-FDBB-A6F2B9AAB0C4}.wem		\Actor-Mixer Hierarchy\Default Work Unit\MX TRACKS\jam_project_-_believe_in_my_existence		43626592
 

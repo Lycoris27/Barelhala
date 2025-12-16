@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: AkWwiseProjectData
   m_EditorClassIdentifier: 
   AcousticTextureWwu:
-  - PhysicalPath: Virtual Acoustics\Default Work Unit.wwu
+  - PhysicalPath: Virtual Acoustics/Default Work Unit.wwu
     PathAndIcons:
     - ElementName: Virtual Acoustics
       ObjectType: 5
@@ -21,13 +21,13 @@ MonoBehaviour:
     - ElementName: Default Work Unit
       ObjectType: 12
       guid: f1105dbc926a13499a69aef3cdbdea1d
-    ParentPath: Virtual Acoustics\Default Work Unit
+    ParentPath: Virtual Acoustics/Default Work Unit
     guid: f1105dbc926a13499a69aef3cdbdea1d
     GuidInternal: 
-    m_lastTime: -8584410043974101689
+    m_lastTime: -8584357792152404474
     List: []
   AuxBusWwu:
-  - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
+  - PhysicalPath: Master-Mixer Hierarchy/Default Work Unit.wwu
     PathAndIcons:
     - ElementName: Master-Mixer Hierarchy
       ObjectType: 5
@@ -35,11 +35,96 @@ MonoBehaviour:
     - ElementName: Default Work Unit
       ObjectType: 12
       guid: d4f991a4a9bad24db809c6c46a53612d
-    ParentPath: Master-Mixer Hierarchy\Default Work Unit
+    ParentPath: Master-Mixer Hierarchy/Default Work Unit
     guid: d4f991a4a9bad24db809c6c46a53612d
     GuidInternal: 
-    m_lastTime: -8584410043976032268
+    m_lastTime: -8584356973541236559
     List:
+    - name: Boom
+      guid: 51a8eaa96062da43bc20930a96362d2a
+      id: 1761501016
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: d4f991a4a9bad24db809c6c46a53612d
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: Boom
+        ObjectType: 2
+        guid: 51a8eaa96062da43bc20930a96362d2a
+      Path: Master-Mixer Hierarchy/Default Work Unit/Master Audio Bus/Boom
+    - name: Character
+      guid: 8eb8791edabcb34d909367437387973d
+      id: 436743010
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: d4f991a4a9bad24db809c6c46a53612d
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: Character
+        ObjectType: 2
+        guid: 8eb8791edabcb34d909367437387973d
+      Path: Master-Mixer Hierarchy/Default Work Unit/Master Audio Bus/Character
+    - name: Combat
+      guid: 435b7ec8d9f5bb4aa5f84148486ffbcf
+      id: 2764240573
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: d4f991a4a9bad24db809c6c46a53612d
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: Combat
+        ObjectType: 2
+        guid: 435b7ec8d9f5bb4aa5f84148486ffbcf
+      Path: Master-Mixer Hierarchy/Default Work Unit/Master Audio Bus/Combat
+    - name: Enemies
+      guid: df428c6a9787044eab858b52188d4879
+      id: 2242381963
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: d4f991a4a9bad24db809c6c46a53612d
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: Enemies
+        ObjectType: 2
+        guid: df428c6a9787044eab858b52188d4879
+      Path: Master-Mixer Hierarchy/Default Work Unit/Master Audio Bus/Enemies
+    - name: Guns & Ammo
+      guid: 40f4256eeaab34498e8d62f69cc008e2
+      id: 1520494568
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: d4f991a4a9bad24db809c6c46a53612d
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: Guns & Ammo
+        ObjectType: 2
+        guid: 40f4256eeaab34498e8d62f69cc008e2
+      Path: Master-Mixer Hierarchy/Default Work Unit/Master Audio Bus/Guns & Ammo
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
       id: 3803692087
@@ -53,9 +138,60 @@ MonoBehaviour:
       - ElementName: Master Audio Bus
         ObjectType: 2
         guid: d8a41415a61d2a41a17e75ca0c2149f3
-      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus
+      Path: Master-Mixer Hierarchy/Default Work Unit/Master Audio Bus
+    - name: MX
+      guid: 89bddfec460cd242ba16d2cc82d77c00
+      id: 1685527054
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: d4f991a4a9bad24db809c6c46a53612d
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: MX
+        ObjectType: 2
+        guid: 89bddfec460cd242ba16d2cc82d77c00
+      Path: Master-Mixer Hierarchy/Default Work Unit/Master Audio Bus/MX
+    - name: SFX
+      guid: ff1e83c699fb334a9d59ec42b7c0a785
+      id: 393239870
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: d4f991a4a9bad24db809c6c46a53612d
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: SFX
+        ObjectType: 2
+        guid: ff1e83c699fb334a9d59ec42b7c0a785
+      Path: Master-Mixer Hierarchy/Default Work Unit/Master Audio Bus/SFX
+    - name: UI
+      guid: 1eb6a6a55131a64893f27549e57ff470
+      id: 1551306167
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: d4f991a4a9bad24db809c6c46a53612d
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: UI
+        ObjectType: 2
+        guid: 1eb6a6a55131a64893f27549e57ff470
+      Path: Master-Mixer Hierarchy/Default Work Unit/Master Audio Bus/UI
   BankWwu:
-  - PhysicalPath: SoundBanks\Default Work Unit.wwu
+  - PhysicalPath: SoundBanks/Default Work Unit.wwu
     PathAndIcons:
     - ElementName: SoundBanks
       ObjectType: 5
@@ -63,10 +199,10 @@ MonoBehaviour:
     - ElementName: Default Work Unit
       ObjectType: 12
       guid: f851c62848808f44a780f3101f4b3637
-    ParentPath: SoundBanks\Default Work Unit
+    ParentPath: SoundBanks/Default Work Unit
     guid: f851c62848808f44a780f3101f4b3637
     GuidInternal: 
-    m_lastTime: -8584409975682599856
+    m_lastTime: -8584357003215764675
     List:
     - name: Main
       guid: a7c2d7e336817947aa12703b5cc44c86
@@ -81,9 +217,9 @@ MonoBehaviour:
       - ElementName: Main
         ObjectType: 7
         guid: a7c2d7e336817947aa12703b5cc44c86
-      Path: SoundBanks\Default Work Unit\Main
+      Path: SoundBanks/Default Work Unit/Main
   EventWwu:
-  - PhysicalPath: Events\Default Work Unit.wwu
+  - PhysicalPath: Events/Default Work Unit.wwu
     PathAndIcons:
     - ElementName: Events
       ObjectType: 5
@@ -91,11 +227,590 @@ MonoBehaviour:
     - ElementName: Default Work Unit
       ObjectType: 12
       guid: 1e05e2559b816f49b51cca68a2d516d4
-    ParentPath: Events\Default Work Unit
+    ParentPath: Events/Default Work Unit
     guid: 1e05e2559b816f49b51cca68a2d516d4
     GuidInternal: 
-    m_lastTime: -8584410011495415509
+    m_lastTime: -8584356964551839075
     List:
+    - name: Bombs
+      guid: 61ef3a8bf501e54085c9307ba2144230
+      id: 2406186980
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 1e05e2559b816f49b51cca68a2d516d4
+      - ElementName: Combat Sounds
+        ObjectType: 4
+        guid: 61504ff24963cc4f9877291f60ff1ec9
+      - ElementName: Bombs
+        ObjectType: 4
+        guid: 61ef3a8bf501e54085c9307ba2144230
+      Path: Events/Default Work Unit/Combat Sounds/Bombs
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Character
+      guid: 4b4f9167791fc748bc05712e3936ab0d
+      id: 436743010
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 1e05e2559b816f49b51cca68a2d516d4
+      - ElementName: Character
+        ObjectType: 4
+        guid: 4b4f9167791fc748bc05712e3936ab0d
+      Path: Events/Default Work Unit/Character
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Combat Sounds
+      guid: 61504ff24963cc4f9877291f60ff1ec9
+      id: 1143253063
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 1e05e2559b816f49b51cca68a2d516d4
+      - ElementName: Combat Sounds
+        ObjectType: 4
+        guid: 61504ff24963cc4f9877291f60ff1ec9
+      Path: Events/Default Work Unit/Combat Sounds
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Enemy
+      guid: a2ff0371bffd9442b4c0e82516ac9c43
+      id: 2299321487
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 1e05e2559b816f49b51cca68a2d516d4
+      - ElementName: Enemy
+        ObjectType: 4
+        guid: a2ff0371bffd9442b4c0e82516ac9c43
+      Path: Events/Default Work Unit/Enemy
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Enemy_Hit
+      guid: 40119595f377354aa8fbc14340e37025
+      id: 1010055213
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 1e05e2559b816f49b51cca68a2d516d4
+      - ElementName: Enemy
+        ObjectType: 4
+        guid: a2ff0371bffd9442b4c0e82516ac9c43
+      - ElementName: Enemy_Hit
+        ObjectType: 3
+        guid: 40119595f377354aa8fbc14340e37025
+      Path: Events/Default Work Unit/Enemy/Enemy_Hit
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Modern Guns
+      guid: 25dde5d1583dc6468339c31c5fed7605
+      id: 182443833
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 1e05e2559b816f49b51cca68a2d516d4
+      - ElementName: Combat Sounds
+        ObjectType: 4
+        guid: 61504ff24963cc4f9877291f60ff1ec9
+      - ElementName: Modern Guns
+        ObjectType: 4
+        guid: 25dde5d1583dc6468339c31c5fed7605
+      Path: Events/Default Work Unit/Combat Sounds/Modern Guns
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Music
+      guid: 18228c7b2b380742bc2d9a38894c4ddf
+      id: 3991942870
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 1e05e2559b816f49b51cca68a2d516d4
+      - ElementName: Music
+        ObjectType: 4
+        guid: 18228c7b2b380742bc2d9a38894c4ddf
+      Path: Events/Default Work Unit/Music
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_Barrel_FS
+      guid: 11b12b70dfd9e84587575f0b8da6a873
+      id: 46336540
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 1e05e2559b816f49b51cca68a2d516d4
+      - ElementName: Character
+        ObjectType: 4
+        guid: 4b4f9167791fc748bc05712e3936ab0d
+      - ElementName: Play_Barrel_FS
+        ObjectType: 3
+        guid: 11b12b70dfd9e84587575f0b8da6a873
+      Path: Events/Default Work Unit/Character/Play_Barrel_FS
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_Barrel_Hit_Grunt
+      guid: ce667f6b3c834b439dca991bfc1c7060
+      id: 252493895
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 1e05e2559b816f49b51cca68a2d516d4
+      - ElementName: Character
+        ObjectType: 4
+        guid: 4b4f9167791fc748bc05712e3936ab0d
+      - ElementName: Play_Barrel_Hit_Grunt
+        ObjectType: 3
+        guid: ce667f6b3c834b439dca991bfc1c7060
+      Path: Events/Default Work Unit/Character/Play_Barrel_Hit_Grunt
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_Barrel_Hit_NO_Grunt
+      guid: 07c13954a461ea4d859871538ffaf04b
+      id: 1767688245
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 1e05e2559b816f49b51cca68a2d516d4
+      - ElementName: Character
+        ObjectType: 4
+        guid: 4b4f9167791fc748bc05712e3936ab0d
+      - ElementName: Play_Barrel_Hit_NO_Grunt
+        ObjectType: 3
+        guid: 07c13954a461ea4d859871538ffaf04b
+      Path: Events/Default Work Unit/Character/Play_Barrel_Hit_NO_Grunt
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_Beam_Rifle
+      guid: af1c14bd0c3992468f4cf5c1339e5544
+      id: 569617988
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 1e05e2559b816f49b51cca68a2d516d4
+      - ElementName: Combat Sounds
+        ObjectType: 4
+        guid: 61504ff24963cc4f9877291f60ff1ec9
+      - ElementName: SCIFI Guns
+        ObjectType: 4
+        guid: 3bb53a1e4957ab47a085b244206ac870
+      - ElementName: Play_Beam_Rifle
+        ObjectType: 3
+        guid: af1c14bd0c3992468f4cf5c1339e5544
+      Path: Events/Default Work Unit/Combat Sounds/SCIFI Guns/Play_Beam_Rifle
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_Bomb_LRG_1
+      guid: d8772bf0196cb246b6cd229c5be2e720
+      id: 2520129558
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 1e05e2559b816f49b51cca68a2d516d4
+      - ElementName: Combat Sounds
+        ObjectType: 4
+        guid: 61504ff24963cc4f9877291f60ff1ec9
+      - ElementName: Bombs
+        ObjectType: 4
+        guid: 61ef3a8bf501e54085c9307ba2144230
+      - ElementName: Play_Bomb_LRG_1
+        ObjectType: 3
+        guid: d8772bf0196cb246b6cd229c5be2e720
+      Path: Events/Default Work Unit/Combat Sounds/Bombs/Play_Bomb_LRG_1
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_Bomb_LRG_2
+      guid: fc7d00f223ba5d499cb4bf30c8ed2682
+      id: 2520129557
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 1e05e2559b816f49b51cca68a2d516d4
+      - ElementName: Combat Sounds
+        ObjectType: 4
+        guid: 61504ff24963cc4f9877291f60ff1ec9
+      - ElementName: Bombs
+        ObjectType: 4
+        guid: 61ef3a8bf501e54085c9307ba2144230
+      - ElementName: Play_Bomb_LRG_2
+        ObjectType: 3
+        guid: fc7d00f223ba5d499cb4bf30c8ed2682
+      Path: Events/Default Work Unit/Combat Sounds/Bombs/Play_Bomb_LRG_2
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_Bomb_LRG_3
+      guid: d189910159aa5a4780d20673c2f119ed
+      id: 2520129556
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 1e05e2559b816f49b51cca68a2d516d4
+      - ElementName: Combat Sounds
+        ObjectType: 4
+        guid: 61504ff24963cc4f9877291f60ff1ec9
+      - ElementName: Bombs
+        ObjectType: 4
+        guid: 61ef3a8bf501e54085c9307ba2144230
+      - ElementName: Play_Bomb_LRG_3
+        ObjectType: 3
+        guid: d189910159aa5a4780d20673c2f119ed
+      Path: Events/Default Work Unit/Combat Sounds/Bombs/Play_Bomb_LRG_3
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_Bomb_SML_1
+      guid: 3c3c83ed7dca05469e56ac6f98fcd1a8
+      id: 1365433199
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 1e05e2559b816f49b51cca68a2d516d4
+      - ElementName: Combat Sounds
+        ObjectType: 4
+        guid: 61504ff24963cc4f9877291f60ff1ec9
+      - ElementName: Bombs
+        ObjectType: 4
+        guid: 61ef3a8bf501e54085c9307ba2144230
+      - ElementName: Play_Bomb_SML_1
+        ObjectType: 3
+        guid: 3c3c83ed7dca05469e56ac6f98fcd1a8
+      Path: Events/Default Work Unit/Combat Sounds/Bombs/Play_Bomb_SML_1
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_Bomb_SML_2
+      guid: d24a7578db1a4c46ae31edece543254f
+      id: 1365433196
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 1e05e2559b816f49b51cca68a2d516d4
+      - ElementName: Combat Sounds
+        ObjectType: 4
+        guid: 61504ff24963cc4f9877291f60ff1ec9
+      - ElementName: Bombs
+        ObjectType: 4
+        guid: 61ef3a8bf501e54085c9307ba2144230
+      - ElementName: Play_Bomb_SML_2
+        ObjectType: 3
+        guid: d24a7578db1a4c46ae31edece543254f
+      Path: Events/Default Work Unit/Combat Sounds/Bombs/Play_Bomb_SML_2
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_Bomb_SML_3
+      guid: 25a8c7d48aeed9428b479cdd6e820bff
+      id: 1365433197
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 1e05e2559b816f49b51cca68a2d516d4
+      - ElementName: Combat Sounds
+        ObjectType: 4
+        guid: 61504ff24963cc4f9877291f60ff1ec9
+      - ElementName: Bombs
+        ObjectType: 4
+        guid: 61ef3a8bf501e54085c9307ba2144230
+      - ElementName: Play_Bomb_SML_3
+        ObjectType: 3
+        guid: 25a8c7d48aeed9428b479cdd6e820bff
+      Path: Events/Default Work Unit/Combat Sounds/Bombs/Play_Bomb_SML_3
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_LNG_Spell_1
+      guid: 944c29dc541bd3408beceffffcb86c61
+      id: 3357748228
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 1e05e2559b816f49b51cca68a2d516d4
+      - ElementName: Combat Sounds
+        ObjectType: 4
+        guid: 61504ff24963cc4f9877291f60ff1ec9
+      - ElementName: Spells
+        ObjectType: 4
+        guid: 3adcb8bbd0e5c34f928d87ff5c7d3be9
+      - ElementName: Play_LNG_Spell_1
+        ObjectType: 3
+        guid: 944c29dc541bd3408beceffffcb86c61
+      Path: Events/Default Work Unit/Combat Sounds/Spells/Play_LNG_Spell_1
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_LNG_Spell_2
+      guid: 4e49cd02fa79dc4aab19fc35f2bad4a0
+      id: 3357748231
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 1e05e2559b816f49b51cca68a2d516d4
+      - ElementName: Combat Sounds
+        ObjectType: 4
+        guid: 61504ff24963cc4f9877291f60ff1ec9
+      - ElementName: Spells
+        ObjectType: 4
+        guid: 3adcb8bbd0e5c34f928d87ff5c7d3be9
+      - ElementName: Play_LNG_Spell_2
+        ObjectType: 3
+        guid: 4e49cd02fa79dc4aab19fc35f2bad4a0
+      Path: Events/Default Work Unit/Combat Sounds/Spells/Play_LNG_Spell_2
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_Mach_Gun_LRG
+      guid: bde0d3f84c21034692df7743d8741f73
+      id: 24563546
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 1e05e2559b816f49b51cca68a2d516d4
+      - ElementName: Combat Sounds
+        ObjectType: 4
+        guid: 61504ff24963cc4f9877291f60ff1ec9
+      - ElementName: SCIFI Guns
+        ObjectType: 4
+        guid: 3bb53a1e4957ab47a085b244206ac870
+      - ElementName: Play_Mach_Gun_LRG
+        ObjectType: 3
+        guid: bde0d3f84c21034692df7743d8741f73
+      Path: Events/Default Work Unit/Combat Sounds/SCIFI Guns/Play_Mach_Gun_LRG
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_Mach_Gun_SML
+      guid: 780746591fae594cb3b17a52b9c1b0c4
+      id: 41488139
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 1e05e2559b816f49b51cca68a2d516d4
+      - ElementName: Combat Sounds
+        ObjectType: 4
+        guid: 61504ff24963cc4f9877291f60ff1ec9
+      - ElementName: SCIFI Guns
+        ObjectType: 4
+        guid: 3bb53a1e4957ab47a085b244206ac870
+      - ElementName: Play_Mach_Gun_SML
+        ObjectType: 3
+        guid: 780746591fae594cb3b17a52b9c1b0c4
+      Path: Events/Default Work Unit/Combat Sounds/SCIFI Guns/Play_Mach_Gun_SML
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_MILI_Gun
+      guid: e626859178762b418b0d124ec898f23b
+      id: 1843195502
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 1e05e2559b816f49b51cca68a2d516d4
+      - ElementName: Combat Sounds
+        ObjectType: 4
+        guid: 61504ff24963cc4f9877291f60ff1ec9
+      - ElementName: Modern Guns
+        ObjectType: 4
+        guid: 25dde5d1583dc6468339c31c5fed7605
+      - ElementName: Play_MILI_Gun
+        ObjectType: 3
+        guid: e626859178762b418b0d124ec898f23b
+      Path: Events/Default Work Unit/Combat Sounds/Modern Guns/Play_MILI_Gun
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_MILI_Pistol
+      guid: e3efdffce15a05419fe59016f596e210
+      id: 2077888973
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 1e05e2559b816f49b51cca68a2d516d4
+      - ElementName: Combat Sounds
+        ObjectType: 4
+        guid: 61504ff24963cc4f9877291f60ff1ec9
+      - ElementName: Modern Guns
+        ObjectType: 4
+        guid: 25dde5d1583dc6468339c31c5fed7605
+      - ElementName: Play_MILI_Pistol
+        ObjectType: 3
+        guid: e3efdffce15a05419fe59016f596e210
+      Path: Events/Default Work Unit/Combat Sounds/Modern Guns/Play_MILI_Pistol
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_MILI_Pistol_Reload
+      guid: ce84800a6ebd0846ab9c0ea61e61bb97
+      id: 782544591
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 1e05e2559b816f49b51cca68a2d516d4
+      - ElementName: Combat Sounds
+        ObjectType: 4
+        guid: 61504ff24963cc4f9877291f60ff1ec9
+      - ElementName: Modern Guns
+        ObjectType: 4
+        guid: 25dde5d1583dc6468339c31c5fed7605
+      - ElementName: Play_MILI_Pistol_Reload
+        ObjectType: 3
+        guid: ce84800a6ebd0846ab9c0ea61e61bb97
+      Path: Events/Default Work Unit/Combat Sounds/Modern Guns/Play_MILI_Pistol_Reload
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_Phaser_Beam
+      guid: b5224573ef985340b3ff7099a98f46b6
+      id: 3219514899
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 1e05e2559b816f49b51cca68a2d516d4
+      - ElementName: Combat Sounds
+        ObjectType: 4
+        guid: 61504ff24963cc4f9877291f60ff1ec9
+      - ElementName: SCIFI Guns
+        ObjectType: 4
+        guid: 3bb53a1e4957ab47a085b244206ac870
+      - ElementName: Play_Phaser_Beam
+        ObjectType: 3
+        guid: b5224573ef985340b3ff7099a98f46b6
+      Path: Events/Default Work Unit/Combat Sounds/SCIFI Guns/Play_Phaser_Beam
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_Quick_Spell_1
+      guid: 67765e9b8a451a45a821c6406ff341a1
+      id: 2909616056
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 1e05e2559b816f49b51cca68a2d516d4
+      - ElementName: Combat Sounds
+        ObjectType: 4
+        guid: 61504ff24963cc4f9877291f60ff1ec9
+      - ElementName: Spells
+        ObjectType: 4
+        guid: 3adcb8bbd0e5c34f928d87ff5c7d3be9
+      - ElementName: Play_Quick_Spell_1
+        ObjectType: 3
+        guid: 67765e9b8a451a45a821c6406ff341a1
+      Path: Events/Default Work Unit/Combat Sounds/Spells/Play_Quick_Spell_1
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_Quick_Spell_2
+      guid: 9f64e3c453b0164f8f4968f0f82589da
+      id: 2909616059
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 1e05e2559b816f49b51cca68a2d516d4
+      - ElementName: Combat Sounds
+        ObjectType: 4
+        guid: 61504ff24963cc4f9877291f60ff1ec9
+      - ElementName: Spells
+        ObjectType: 4
+        guid: 3adcb8bbd0e5c34f928d87ff5c7d3be9
+      - ElementName: Play_Quick_Spell_2
+        ObjectType: 3
+        guid: 9f64e3c453b0164f8f4968f0f82589da
+      Path: Events/Default Work Unit/Combat Sounds/Spells/Play_Quick_Spell_2
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Play_Song
       guid: effa81355f5bd54ea838ab154f40a8f9
       id: 251043389
@@ -106,10 +821,13 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: 1e05e2559b816f49b51cca68a2d516d4
+      - ElementName: Music
+        ObjectType: 4
+        guid: 18228c7b2b380742bc2d9a38894c4ddf
       - ElementName: Play_Song
         ObjectType: 3
         guid: effa81355f5bd54ea838ab154f40a8f9
-      Path: Events\Default Work Unit\Play_Song
+      Path: Events/Default Work Unit/Music/Play_Song
       maxAttenuation: 0
       maxDuration: 247.31573
       minDuration: 247.31573
@@ -123,15 +841,270 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: 1e05e2559b816f49b51cca68a2d516d4
+      - ElementName: Music
+        ObjectType: 4
+        guid: 18228c7b2b380742bc2d9a38894c4ddf
       - ElementName: Play_This
         ObjectType: 3
         guid: 6e1d11f213a0924b93fb9024aae19cb8
-      Path: Events\Default Work Unit\Play_This
+      Path: Events/Default Work Unit/Music/Play_This
       maxAttenuation: 0
       maxDuration: 247.31573
       minDuration: 247.31573
+    - name: Play_UI_Cancel
+      guid: e915d6b381880242a38615a3cf8255a3
+      id: 2244506081
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 1e05e2559b816f49b51cca68a2d516d4
+      - ElementName: UX SFX
+        ObjectType: 4
+        guid: df2b19e34661e74da710162b2a1e42d4
+      - ElementName: Play_UI_Cancel
+        ObjectType: 3
+        guid: e915d6b381880242a38615a3cf8255a3
+      Path: Events/Default Work Unit/UX SFX/Play_UI_Cancel
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_UI_Confirm
+      guid: 03524e34a2cc77439883449072823ff8
+      id: 3022734157
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 1e05e2559b816f49b51cca68a2d516d4
+      - ElementName: UX SFX
+        ObjectType: 4
+        guid: df2b19e34661e74da710162b2a1e42d4
+      - ElementName: Play_UI_Confirm
+        ObjectType: 3
+        guid: 03524e34a2cc77439883449072823ff8
+      Path: Events/Default Work Unit/UX SFX/Play_UI_Confirm
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_UI_Error
+      guid: 012203d07d6cb0458b8dbecc1cc2a829
+      id: 973986035
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 1e05e2559b816f49b51cca68a2d516d4
+      - ElementName: UX SFX
+        ObjectType: 4
+        guid: df2b19e34661e74da710162b2a1e42d4
+      - ElementName: Play_UI_Error
+        ObjectType: 3
+        guid: 012203d07d6cb0458b8dbecc1cc2a829
+      Path: Events/Default Work Unit/UX SFX/Play_UI_Error
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_UI_Navigation
+      guid: 8ef7956546e8ca4b8fae9a42712a3f62
+      id: 2669659209
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 1e05e2559b816f49b51cca68a2d516d4
+      - ElementName: UX SFX
+        ObjectType: 4
+        guid: df2b19e34661e74da710162b2a1e42d4
+      - ElementName: Play_UI_Navigation
+        ObjectType: 3
+        guid: 8ef7956546e8ca4b8fae9a42712a3f62
+      Path: Events/Default Work Unit/UX SFX/Play_UI_Navigation
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: SCIFI Guns
+      guid: 3bb53a1e4957ab47a085b244206ac870
+      id: 2085589888
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 1e05e2559b816f49b51cca68a2d516d4
+      - ElementName: Combat Sounds
+        ObjectType: 4
+        guid: 61504ff24963cc4f9877291f60ff1ec9
+      - ElementName: SCIFI Guns
+        ObjectType: 4
+        guid: 3bb53a1e4957ab47a085b244206ac870
+      Path: Events/Default Work Unit/Combat Sounds/SCIFI Guns
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Spells
+      guid: 3adcb8bbd0e5c34f928d87ff5c7d3be9
+      id: 4160437992
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 1e05e2559b816f49b51cca68a2d516d4
+      - ElementName: Combat Sounds
+        ObjectType: 4
+        guid: 61504ff24963cc4f9877291f60ff1ec9
+      - ElementName: Spells
+        ObjectType: 4
+        guid: 3adcb8bbd0e5c34f928d87ff5c7d3be9
+      Path: Events/Default Work Unit/Combat Sounds/Spells
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Stop_Beam_Rifle
+      guid: 2ecfd213608ce349b856086c483ad430
+      id: 3507253114
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 1e05e2559b816f49b51cca68a2d516d4
+      - ElementName: Combat Sounds
+        ObjectType: 4
+        guid: 61504ff24963cc4f9877291f60ff1ec9
+      - ElementName: SCIFI Guns
+        ObjectType: 4
+        guid: 3bb53a1e4957ab47a085b244206ac870
+      - ElementName: Stop_Beam_Rifle
+        ObjectType: 3
+        guid: 2ecfd213608ce349b856086c483ad430
+      Path: Events/Default Work Unit/Combat Sounds/SCIFI Guns/Stop_Beam_Rifle
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Stop_Mach_Gun_LRG
+      guid: dd26a33857421c4fa9365f0327873b6f
+      id: 1861130884
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 1e05e2559b816f49b51cca68a2d516d4
+      - ElementName: Combat Sounds
+        ObjectType: 4
+        guid: 61504ff24963cc4f9877291f60ff1ec9
+      - ElementName: SCIFI Guns
+        ObjectType: 4
+        guid: 3bb53a1e4957ab47a085b244206ac870
+      - ElementName: Stop_Mach_Gun_LRG
+        ObjectType: 3
+        guid: dd26a33857421c4fa9365f0327873b6f
+      Path: Events/Default Work Unit/Combat Sounds/SCIFI Guns/Stop_Mach_Gun_LRG
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Stop_Mach_Gun_SML
+      guid: e8391778e23829488c74fdd1a357fc1e
+      id: 1810253577
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 1e05e2559b816f49b51cca68a2d516d4
+      - ElementName: Combat Sounds
+        ObjectType: 4
+        guid: 61504ff24963cc4f9877291f60ff1ec9
+      - ElementName: SCIFI Guns
+        ObjectType: 4
+        guid: 3bb53a1e4957ab47a085b244206ac870
+      - ElementName: Stop_Mach_Gun_SML
+        ObjectType: 3
+        guid: e8391778e23829488c74fdd1a357fc1e
+      Path: Events/Default Work Unit/Combat Sounds/SCIFI Guns/Stop_Mach_Gun_SML
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Stop_MILI_Gun
+      guid: 3556f5d8c625284c8b171fc2c37608bf
+      id: 3661240000
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 1e05e2559b816f49b51cca68a2d516d4
+      - ElementName: Combat Sounds
+        ObjectType: 4
+        guid: 61504ff24963cc4f9877291f60ff1ec9
+      - ElementName: Modern Guns
+        ObjectType: 4
+        guid: 25dde5d1583dc6468339c31c5fed7605
+      - ElementName: Stop_MILI_Gun
+        ObjectType: 3
+        guid: 3556f5d8c625284c8b171fc2c37608bf
+      Path: Events/Default Work Unit/Combat Sounds/Modern Guns/Stop_MILI_Gun
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Stop_Phaser_Beam
+      guid: 27ee91aa9e94534884f8e958cd53ab54
+      id: 3676814429
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 1e05e2559b816f49b51cca68a2d516d4
+      - ElementName: Combat Sounds
+        ObjectType: 4
+        guid: 61504ff24963cc4f9877291f60ff1ec9
+      - ElementName: SCIFI Guns
+        ObjectType: 4
+        guid: 3bb53a1e4957ab47a085b244206ac870
+      - ElementName: Stop_Phaser_Beam
+        ObjectType: 3
+        guid: 27ee91aa9e94534884f8e958cd53ab54
+      Path: Events/Default Work Unit/Combat Sounds/SCIFI Guns/Stop_Phaser_Beam
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: UX SFX
+      guid: df2b19e34661e74da710162b2a1e42d4
+      id: 2559174467
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 1e05e2559b816f49b51cca68a2d516d4
+      - ElementName: UX SFX
+        ObjectType: 4
+        guid: df2b19e34661e74da710162b2a1e42d4
+      Path: Events/Default Work Unit/UX SFX
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
   RtpcWwu:
-  - PhysicalPath: Game Parameters\Default Work Unit.wwu
+  - PhysicalPath: Game Parameters/Default Work Unit.wwu
     PathAndIcons:
     - ElementName: Game Parameters
       ObjectType: 5
@@ -139,13 +1112,13 @@ MonoBehaviour:
     - ElementName: Default Work Unit
       ObjectType: 12
       guid: 1c7a8d792726554ca1d41e62054683df
-    ParentPath: Game Parameters\Default Work Unit
+    ParentPath: Game Parameters/Default Work Unit
     guid: 1c7a8d792726554ca1d41e62054683df
     GuidInternal: 
-    m_lastTime: -8584410043975230930
+    m_lastTime: -8584357792156293136
     List: []
   StateWwu:
-  - PhysicalPath: States\Default Work Unit.wwu
+  - PhysicalPath: States/Default Work Unit.wwu
     PathAndIcons:
     - ElementName: States
       ObjectType: 5
@@ -153,13 +1126,13 @@ MonoBehaviour:
     - ElementName: Default Work Unit
       ObjectType: 12
       guid: 890023123dfd3b4ca39dd6036f1bab71
-    ParentPath: States\Default Work Unit
+    ParentPath: States/Default Work Unit
     guid: 890023123dfd3b4ca39dd6036f1bab71
     GuidInternal: 
-    m_lastTime: -8584410043974548170
+    m_lastTime: -8584357792152407943
     List: []
   SwitchWwu:
-  - PhysicalPath: Switches\Default Work Unit.wwu
+  - PhysicalPath: Switches/Default Work Unit.wwu
     PathAndIcons:
     - ElementName: Switches
       ObjectType: 5
@@ -167,13 +1140,13 @@ MonoBehaviour:
     - ElementName: Default Work Unit
       ObjectType: 12
       guid: 43211d99d6d3d043b6d04e4dfc41ffd1
-    ParentPath: Switches\Default Work Unit
+    ParentPath: Switches/Default Work Unit
     guid: 43211d99d6d3d043b6d04e4dfc41ffd1
     GuidInternal: 
-    m_lastTime: -8584410043975744615
+    m_lastTime: -8584357792152406537
     List: []
   TriggerWwu:
-  - PhysicalPath: Triggers\Default Work Unit.wwu
+  - PhysicalPath: Triggers/Default Work Unit.wwu
     PathAndIcons:
     - ElementName: Triggers
       ObjectType: 5
@@ -181,13 +1154,13 @@ MonoBehaviour:
     - ElementName: Default Work Unit
       ObjectType: 12
       guid: aa2f2e7ae46b4c4daa0e8f04d1b89452
-    ParentPath: Triggers\Default Work Unit
+    ParentPath: Triggers/Default Work Unit
     guid: aa2f2e7ae46b4c4daa0e8f04d1b89452
     GuidInternal: 
-    m_lastTime: -8584410043974658732
+    m_lastTime: -8584357792152405383
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 0500000006000000070000000a0000000b0000000c000000
+  ExpandedWaapiItemIds: 0100000005000000060000000700000008000000090000000a0000000b0000000c0000001d000000240000002900000032000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0
