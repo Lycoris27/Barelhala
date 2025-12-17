@@ -27,7 +27,7 @@ MonoBehaviour:
   directionChange: 8
   directionSwapCounter: 0
   repeatingCounter: 0
-  linearSpeed: 30
+  linearSpeed: 20
   linearSpeedDelay: 0
   angularSpeed: 0
   angularSpeedDelay: 0

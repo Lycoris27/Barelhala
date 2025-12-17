@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using System.Collections;
 
 
 public class SceneManagerScript : MonoBehaviour
@@ -23,12 +24,36 @@ public class SceneManagerScript : MonoBehaviour
     }
     public void LoadNextScene()
     {
+        StartCoroutine(LoadNextSceneRoutine());
+    }
+    private IEnumerator LoadNextSceneRoutine()
+    {
         Scene currentScene = SceneManager.GetActiveScene();
+        bool isLastScene = currentScene.buildIndex + 1 >= SceneManager.sceneCountInBuildSettings;
 
-        if (currentScene.buildIndex + 1 < SceneManager.sceneCountInBuildSettings)
-            SceneManager.LoadScene(currentScene.buildIndex + 1);
-        else
-            SceneManager.LoadScene(0);
+        int nextIndex = isLastScene
+            ? 0
+            : currentScene.buildIndex + 1;
+
+        // Always load the next scene
+        SceneManager.LoadSceneAsync(nextIndex);
+
+        // If we're wrapping from the last scene, ONLY engage UI 2
+        if (isLastScene)
+        {
+            UIManagerScript.EngageUI(2);
+            yield break;
+        }
+
+        // Normal transition flow
+        UIManagerScript.EngageUI(5);
+        GlobalEvents.OnPause();
+
+        // Unscaled delay – works even when timeScale == 0
+        yield return new WaitForSecondsRealtime(3f);
+
+        GlobalEvents.OnResume();
+        UIManagerScript.EngageUI(2);
     }
 
 

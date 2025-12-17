@@ -17,8 +17,9 @@ MonoBehaviour:
   objectSize: {x: 1, y: 1, z: 1}
   coneAngle: 360
   isTargettingPlayer: 0
+  isTargettingLastLocation: 0
   spawnRate: 4
-  bulletCount: 16
+  bulletCount: 12
   spawnRadius: 2
   radiusChange: 0
   direction: 0

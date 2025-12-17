@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 8456586753066627108}
   - component: {fileID: 7272037105714847596}
   - component: {fileID: 6107208006068354494}
+  - component: {fileID: 3312511467405151765}
   m_Layer: 0
   m_Name: Key Object
   m_TagString: Interactible
@@ -123,6 +124,28 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isDoor: 0
+--- !u!95 &3312511467405151765
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 996655748272976710}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: b2ad2d7047c2f2145ba32e5a43b7a203, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1001 &8665492455212427043
 PrefabInstance:
   m_ObjectHideFlags: 0

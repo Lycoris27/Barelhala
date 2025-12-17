@@ -17,9 +17,11 @@ MonoBehaviour:
   objectSize: {x: 1, y: 1, z: 1}
   coneAngle: 0
   isTargettingPlayer: 1
-  spawnRate: 15
+  isTargettingLastLocation: 0
+  spawnRate: 10
   bulletCount: 1
   spawnRadius: 0
+  radiusChange: 0
   direction: 0
   randomDirection: 0
   directionChange: 7
