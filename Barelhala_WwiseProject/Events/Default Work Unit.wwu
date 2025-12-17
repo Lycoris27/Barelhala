@@ -117,6 +117,106 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="Stop_MX_01" ID="{32DDE12D-1EFC-4E7A-9751-35FDC73AC5B9}">
+							<ChildrenList>
+								<Action Name="" ID="{EA09CD99-ECBC-4C6C-A079-E02E34456785}" ShortID="49215162">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Barrels MX 1" ID="{F1F4FA79-C79F-46C6-B5B8-E07597331F3E}" WorkUnitID="{2CECF303-F04B-4A6A-9EA5-1991813EBDC9}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_MX_01" ID="{D68B91B7-0B9C-4DB3-99B9-3E3187D10F17}">
+							<ChildrenList>
+								<Action Name="" ID="{3A8479FA-2A8F-4533-9085-AC447947F8F1}" ShortID="108675529">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Barrels MX 1" ID="{F1F4FA79-C79F-46C6-B5B8-E07597331F3E}" WorkUnitID="{2CECF303-F04B-4A6A-9EA5-1991813EBDC9}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_MX_02" ID="{A73D9AC3-A594-450C-8ACF-D1D232375822}">
+							<ChildrenList>
+								<Action Name="" ID="{D5ECEFFD-607D-4C36-A662-B9336F32A370}" ShortID="886799693">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Barrels MX 2" ID="{A0A7AACD-AAF1-43B5-BADC-6AA50D07A814}" WorkUnitID="{2CECF303-F04B-4A6A-9EA5-1991813EBDC9}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_MX_03" ID="{073796FC-327B-4134-A2CA-7B24303CF0EC}">
+							<ChildrenList>
+								<Action Name="" ID="{5581167C-E8A1-40DA-BEB4-876B48E495BC}" ShortID="737428128">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Barrels MX 3" ID="{786A0900-5437-42A7-A381-A98E15A576DB}" WorkUnitID="{2CECF303-F04B-4A6A-9EA5-1991813EBDC9}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_MX_04" ID="{434AC686-3215-421B-AA87-FE3885D7A547}">
+							<ChildrenList>
+								<Action Name="" ID="{08AFB9A0-3A09-4F97-A182-26DE840154A3}" ShortID="56477474">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Barrels MX 4" ID="{0579E186-8F7B-458C-AEB7-C4274222E439}" WorkUnitID="{2CECF303-F04B-4A6A-9EA5-1991813EBDC9}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Stop_MX_02" ID="{E1313CB6-EC50-4B8E-9BEB-15E30CD36E02}">
+							<ChildrenList>
+								<Action Name="" ID="{FAEFF9E2-8A25-4AE5-9370-BFEA3C6A98A9}" ShortID="118700971">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Barrels MX 2" ID="{A0A7AACD-AAF1-43B5-BADC-6AA50D07A814}" WorkUnitID="{2CECF303-F04B-4A6A-9EA5-1991813EBDC9}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Stop_MX_03" ID="{ABA47880-5591-4F35-A18E-8F33D7ECB3D2}">
+							<ChildrenList>
+								<Action Name="" ID="{FBA8FA84-5E74-41AB-977C-DC03197521AD}" ShortID="127720393">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Barrels MX 3" ID="{786A0900-5437-42A7-A381-A98E15A576DB}" WorkUnitID="{2CECF303-F04B-4A6A-9EA5-1991813EBDC9}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Stop_MX_04" ID="{05AFECB2-4AA6-4BBB-B10E-C6D9CF47A08A}">
+							<ChildrenList>
+								<Action Name="" ID="{6E8F8B61-1125-45C6-B42D-1B4AC1CA5E1F}" ShortID="941106200">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Barrels MX 4" ID="{0579E186-8F7B-458C-AEB7-C4274222E439}" WorkUnitID="{2CECF303-F04B-4A6A-9EA5-1991813EBDC9}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Combat Sounds" ID="{F24F5061-6349-4FCC-9877-291F60FF1EC9}" ShortID="585395167">

@@ -5349,6 +5349,7 @@
 								<Property Name="OverrideColor" Type="bool" Value="True"/>
 							</PropertyList>
 						</Folder>
+						<Folder Name="B-MX" ID="{C8256814-0828-41F1-9467-8012EC428786}" ShortID="521719988"/>
 					</ChildrenList>
 				</ActorMixer>
 			</ChildrenList>
